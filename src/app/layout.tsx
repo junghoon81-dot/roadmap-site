@@ -6,7 +6,7 @@ import './globals.css';
 
 export const metadata: Metadata = {
   title: '김과외 프로덕트 로드맵',
-  description: '김과외 3월–6월 프로덕트 로드맵 — 공고 개편 · AI 검색 · 매출 향상 · 관계 유지 · 판단 보조',
+  description: '김과외 2026 프로덕트 로드맵 — 관계쌓기 · 결제정비 · 성사율 · 유입확대 · 교육 OS',
 };
 
 export const viewport: Viewport = {
