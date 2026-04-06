@@ -9,6 +9,7 @@ const links = [
   { href: '/roadmap/apr', label: '4월 로드맵' },
   { href: '/roadmap/may', label: '5월 로드맵' },
   { href: '/roadmap/jun', label: '6월 로드맵' },
+  { href: '/archive', label: '작업 아카이브' },
 ];
 
 export default function MobileMenu() {

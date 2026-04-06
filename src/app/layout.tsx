@@ -31,6 +31,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <NavLink href="/roadmap/apr">4월</NavLink>
               <NavLink href="/roadmap/may">5월</NavLink>
               <NavLink href="/roadmap/jun">6월</NavLink>
+              <NavLink href="/archive">아카이브</NavLink>
             </nav>
 
             {/* Mobile hamburger */}
