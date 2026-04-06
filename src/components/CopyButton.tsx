@@ -20,8 +20,8 @@ export default function CopyButton({ text }: { text: string }) {
   return (
     <button
       onClick={handleCopy}
-      className="absolute top-2 right-2 px-2 py-1 text-xs rounded
-        bg-zinc-700 hover:bg-zinc-600 text-zinc-300 hover:text-white
+      className="absolute top-2 right-2 px-2 py-1 text-xs rounded-md
+        bg-white/10 hover:bg-white/20 text-white/60 hover:text-white
         transition-colors duration-200 opacity-0 group-hover:opacity-100"
       title="복사"
     >

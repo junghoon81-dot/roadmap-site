@@ -45,29 +45,29 @@ export default function RoadmapViewer({ period, content, version, title }: Props
   return (
     <div>
       {/* Header bar */}
-      <div className="sticky top-14 z-40 bg-zinc-950/90 backdrop-blur-md border-b border-zinc-800
-        py-2 sm:py-3 px-3 sm:px-6">
-        <div className="max-w-7xl mx-auto">
+      <div className="sticky top-12 z-40 bg-white/80 backdrop-blur-xl backdrop-saturate-[180%] border-b border-black/[0.06]
+        py-2 sm:py-2.5 px-3 sm:px-6">
+        <div className="max-w-5xl mx-auto">
           <div className="flex items-center justify-between gap-2">
             <div className="flex items-center gap-2 sm:gap-4 min-w-0">
-              <span className="text-sm sm:text-base font-semibold text-emerald-400 truncate">
+              <span className="text-sm sm:text-base font-semibold text-[#1d1d1f] truncate tracking-tight">
                 {PERIOD_LABELS[period]}
               </span>
-              <span className="hidden sm:inline text-xs text-zinc-500">
+              <span className="hidden sm:inline text-xs text-[#1d1d1f]/40">
                 {PERIOD_DATES[period]}
               </span>
-              <span className="text-xs font-mono px-2 py-1 bg-emerald-600/20 text-emerald-400 rounded whitespace-nowrap">
+              <span className="text-[11px] font-mono px-2 py-0.5 bg-[#0071e3]/10 text-[#0071e3] rounded-full whitespace-nowrap">
                 {version}
               </span>
             </div>
             <div className="flex items-center gap-1.5 sm:gap-2 shrink-0">
               <button onClick={handleCopyAll}
-                className="px-2 sm:px-3 py-1.5 text-xs bg-zinc-800 hover:bg-zinc-700 text-zinc-300 rounded-md transition-colors whitespace-nowrap">
+                className="px-2.5 sm:px-3 py-1.5 text-xs bg-[#f5f5f7] hover:bg-[#e8e8ed] text-[#1d1d1f]/70 rounded-lg transition-colors whitespace-nowrap">
                 <span className="sm:hidden">📋</span>
                 <span className="hidden sm:inline">📋 복사</span>
               </button>
               <button onClick={handleDownload}
-                className="px-2 sm:px-3 py-1.5 text-xs bg-zinc-800 hover:bg-zinc-700 text-zinc-300 rounded-md transition-colors whitespace-nowrap">
+                className="px-2.5 sm:px-3 py-1.5 text-xs bg-[#f5f5f7] hover:bg-[#e8e8ed] text-[#1d1d1f]/70 rounded-lg transition-colors whitespace-nowrap">
                 <span className="sm:hidden">⬇</span>
                 <span className="hidden sm:inline">⬇ .md</span>
               </button>
@@ -77,8 +77,8 @@ export default function RoadmapViewer({ period, content, version, title }: Props
       </div>
 
       {/* Content + TOC */}
-      <div className="max-w-7xl mx-auto px-3 sm:px-6 py-6 sm:py-8 flex gap-8">
-        <article className="flex-1 min-w-0">
+      <div className="max-w-5xl mx-auto px-3 sm:px-6 py-6 sm:py-10 flex gap-8">
+        <article className="flex-1 min-w-0 bg-white rounded-2xl p-5 sm:p-8 shadow-sm">
           <MarkdownRenderer content={content} />
         </article>
         <TableOfContents content={content} />
@@ -87,7 +87,7 @@ export default function RoadmapViewer({ period, content, version, title }: Props
       {/* Toast */}
       {toast && (
         <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50
-          px-4 py-2.5 bg-emerald-600 text-white text-sm rounded-lg shadow-lg
+          px-5 py-2.5 bg-[#1d1d1f] text-white text-sm rounded-full shadow-lg
           animate-[fadeInUp_0.2s_ease-out] max-w-[90vw] text-center">
           {toast}
         </div>

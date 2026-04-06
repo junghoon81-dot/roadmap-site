@@ -17,16 +17,16 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="ko" className="dark">
-      <body className="bg-zinc-950 text-zinc-100 min-h-screen">
-        <header className="sticky top-0 z-50 bg-zinc-950/80 backdrop-blur-md border-b border-zinc-800">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 h-14 flex items-center justify-between">
-            <Link href="/" className="text-lg font-bold text-emerald-400 hover:text-emerald-300 transition-colors shrink-0">
+    <html lang="ko">
+      <body className="bg-[#f5f5f7] text-[#1d1d1f] min-h-screen antialiased">
+        <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-xl backdrop-saturate-[180%] border-b border-black/[0.08]">
+          <div className="max-w-5xl mx-auto px-4 sm:px-6 h-12 flex items-center justify-between">
+            <Link href="/" className="text-base font-semibold text-[#1d1d1f] hover:text-[#0071e3] transition-colors shrink-0 tracking-tight">
               김과외 로드맵
             </Link>
 
             {/* Desktop nav */}
-            <nav className="hidden md:flex gap-4 lg:gap-6 text-sm ml-8">
+            <nav className="hidden md:flex gap-5 lg:gap-7 text-sm ml-8">
               <NavLink href="/roadmap/may">5월</NavLink>
               <NavLink href="/roadmap/jun">6월</NavLink>
             </nav>

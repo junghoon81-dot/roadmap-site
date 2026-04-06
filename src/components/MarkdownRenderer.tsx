@@ -32,25 +32,25 @@ export default function MarkdownRenderer({ content }: Props) {
   };
 
   return (
-    <div className="prose prose-invert prose-zinc max-w-none
-      prose-headings:scroll-mt-28
-      prose-h1:text-xl prose-h1:sm:text-2xl prose-h1:font-bold prose-h1:border-b prose-h1:border-zinc-700 prose-h1:pb-3
-      prose-h2:text-lg prose-h2:sm:text-xl prose-h2:font-semibold prose-h2:mt-8 prose-h2:sm:mt-10 prose-h2:border-b prose-h2:border-zinc-800 prose-h2:pb-2
+    <div className="prose prose-zinc max-w-none
+      prose-headings:scroll-mt-28 prose-headings:tracking-tight
+      prose-h1:text-xl prose-h1:sm:text-2xl prose-h1:font-semibold prose-h1:border-b prose-h1:border-black/[0.08] prose-h1:pb-3
+      prose-h2:text-lg prose-h2:sm:text-xl prose-h2:font-semibold prose-h2:mt-8 prose-h2:sm:mt-10 prose-h2:border-b prose-h2:border-black/[0.06] prose-h2:pb-2
       prose-h3:text-base prose-h3:sm:text-lg prose-h3:font-medium prose-h3:mt-6 prose-h3:sm:mt-8
-      prose-p:text-sm prose-p:sm:text-base prose-p:leading-relaxed
-      prose-li:text-sm prose-li:sm:text-base
+      prose-p:text-sm prose-p:sm:text-base prose-p:leading-relaxed prose-p:text-[#1d1d1f]/80
+      prose-li:text-sm prose-li:sm:text-base prose-li:text-[#1d1d1f]/80
       prose-table:text-xs prose-table:sm:text-sm
-      prose-th:bg-zinc-800 prose-th:px-2 prose-th:sm:px-3 prose-th:py-1.5 prose-th:sm:py-2 prose-th:text-xs prose-th:sm:text-sm
-      prose-td:px-2 prose-td:sm:px-3 prose-td:py-1.5 prose-td:sm:py-2 prose-td:border-zinc-700 prose-td:text-xs prose-td:sm:text-sm
-      prose-code:text-emerald-400 prose-code:bg-zinc-800
-      prose-code:px-1 prose-code:sm:px-1.5 prose-code:py-0.5 prose-code:rounded prose-code:text-xs prose-code:sm:text-sm
-      prose-pre:bg-zinc-900 prose-pre:border prose-pre:border-zinc-700 prose-pre:rounded-lg
+      prose-th:bg-[#f5f5f7] prose-th:px-2 prose-th:sm:px-3 prose-th:py-1.5 prose-th:sm:py-2 prose-th:text-xs prose-th:sm:text-sm prose-th:text-[#1d1d1f]/70 prose-th:font-semibold
+      prose-td:px-2 prose-td:sm:px-3 prose-td:py-1.5 prose-td:sm:py-2 prose-td:border-black/[0.06] prose-td:text-xs prose-td:sm:text-sm
+      prose-code:text-[#0071e3] prose-code:bg-[#f5f5f7]
+      prose-code:px-1 prose-code:sm:px-1.5 prose-code:py-0.5 prose-code:rounded-md prose-code:text-xs prose-code:sm:text-sm
+      prose-pre:bg-[#1d1d1f] prose-pre:border-0 prose-pre:rounded-xl
       prose-pre:text-xs prose-pre:sm:text-sm
-      prose-strong:text-zinc-100
-      prose-a:text-blue-400 prose-a:no-underline hover:prose-a:underline
-      prose-li:marker:text-zinc-500
-      prose-blockquote:border-l-emerald-500 prose-blockquote:bg-zinc-800/50 prose-blockquote:rounded-r-lg prose-blockquote:py-1 prose-blockquote:px-3 prose-blockquote:sm:px-4
-      prose-blockquote:text-sm
+      prose-strong:text-[#1d1d1f]
+      prose-a:text-[#0066cc] prose-a:no-underline hover:prose-a:underline
+      prose-li:marker:text-[#1d1d1f]/30
+      prose-blockquote:border-l-[#0071e3] prose-blockquote:bg-[#f5f5f7] prose-blockquote:rounded-r-xl prose-blockquote:py-1 prose-blockquote:px-3 prose-blockquote:sm:px-4
+      prose-blockquote:text-sm prose-blockquote:text-[#1d1d1f]/70
     ">
       <ReactMarkdown
         remarkPlugins={[remarkGfm]}

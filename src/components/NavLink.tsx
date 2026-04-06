@@ -17,8 +17,8 @@ export default function NavLink({ href, children }: Props) {
       href={href}
       className={`transition-colors ${
         isActive
-          ? 'text-emerald-400 font-medium'
-          : 'text-zinc-400 hover:text-zinc-100'
+          ? 'text-[#0071e3] font-medium'
+          : 'text-[#1d1d1f]/60 hover:text-[#1d1d1f]'
       }`}
     >
       {children}

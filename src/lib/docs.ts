@@ -20,7 +20,7 @@ const SUBTITLES: Record<RoadmapPeriod, string> = {
 };
 
 const DESCRIPTIONS: Record<RoadmapPeriod, string> = {
-  'may': '매칭 이후 끊기는 관계를 매주 체크인으로 유지하고, 이상 신호 감지 시 코칭 리포트 → 중재 → 재매칭으로 연결. 에이전트 대비 데이터 축적 기반을 확보합니다.',
+  'may': '온플랫폼 관계 지속 특집. 매칭 이후 끊기는 관계를 매주 체크인으로 유지하고, 이상 신호 감지 시 코칭 리포트 → 중재 → 재매칭으로 연결합니다.',
   'jun': '에이전트 시대 대비 실행 레이어 설계(Outcome Graph, API, 위임 구조), 중재 고도화 + 선생님 대시보드, 안심결제 전국 확대 + 요금 역전 해소',
 };
 

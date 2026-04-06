@@ -17,7 +17,7 @@ export default function MobileMenu() {
     <div className="md:hidden">
       <button
         onClick={() => setOpen(!open)}
-        className="p-2 text-zinc-400 hover:text-zinc-200"
+        className="p-2 text-[#1d1d1f]/60 hover:text-[#1d1d1f]"
         aria-label="메뉴 열기"
       >
         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -30,14 +30,14 @@ export default function MobileMenu() {
       </button>
 
       {open && (
-        <div className="absolute top-14 left-0 right-0 bg-zinc-950 border-b border-zinc-800 py-2 px-4">
+        <div className="absolute top-12 left-0 right-0 bg-white/95 backdrop-blur-xl border-b border-black/[0.08] py-2 px-4 shadow-sm">
           {links.map(({ href, label }) => (
             <Link
               key={href}
               href={href}
               onClick={() => setOpen(false)}
               className={`block py-2.5 text-sm ${
-                pathname === href ? 'text-emerald-400 font-semibold' : 'text-zinc-400'
+                pathname === href ? 'text-[#0071e3] font-semibold' : 'text-[#1d1d1f]/60'
               }`}
             >
               {label}

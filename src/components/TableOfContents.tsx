@@ -68,18 +68,18 @@ export default function TableOfContents({ content }: { content: string }) {
   return (
     <>
       {/* 데스크톱 사이드 TOC */}
-      <nav className="hidden xl:block w-64 shrink-0 sticky top-28 max-h-[calc(100vh-8rem)] overflow-y-auto
-        text-sm border-l border-zinc-800 pl-4">
-        <p className="text-zinc-400 font-medium mb-3 text-xs uppercase tracking-wider">목차</p>
-        <ul className="space-y-1">
+      <nav className="hidden xl:block w-56 shrink-0 sticky top-28 max-h-[calc(100vh-8rem)] overflow-y-auto
+        text-sm pl-6">
+        <p className="text-[#1d1d1f]/30 font-medium mb-3 text-[10px] uppercase tracking-widest">목차</p>
+        <ul className="space-y-0.5">
           {items.map(({ id, text, level }) => (
             <li key={id} style={{ paddingLeft: `${(level - 1) * 12}px` }}>
               <a
                 href={`#${id}`}
-                className={`block py-0.5 truncate transition-colors duration-150 ${
+                className={`block py-0.5 truncate transition-colors duration-150 text-[13px] ${
                   activeId === id
-                    ? 'text-emerald-400 font-medium'
-                    : 'text-zinc-500 hover:text-zinc-300'
+                    ? 'text-[#0071e3] font-medium'
+                    : 'text-[#1d1d1f]/40 hover:text-[#1d1d1f]/70'
                 }`}
               >
                 {text}
@@ -93,8 +93,8 @@ export default function TableOfContents({ content }: { content: string }) {
       <button
         onClick={() => setMobileOpen(true)}
         className="xl:hidden fixed bottom-5 right-4 z-40 w-12 h-12
-          bg-emerald-600 hover:bg-emerald-500 active:bg-emerald-700
-          text-white rounded-full shadow-lg shadow-emerald-600/30
+          bg-[#0071e3] hover:bg-[#0077ed] active:bg-[#006edb]
+          text-white rounded-full shadow-lg shadow-[#0071e3]/20
           flex items-center justify-center transition-colors"
         aria-label="목차 열기"
       >
@@ -109,21 +109,21 @@ export default function TableOfContents({ content }: { content: string }) {
         <div className="xl:hidden fixed inset-0 z-50">
           {/* 오버레이 */}
           <div
-            className="absolute inset-0 bg-black/60 backdrop-blur-sm"
+            className="absolute inset-0 bg-black/30 backdrop-blur-sm"
             onClick={() => setMobileOpen(false)}
           />
           {/* 바텀시트 */}
-          <div className="absolute bottom-0 left-0 right-0 bg-zinc-900 border-t border-zinc-700
+          <div className="absolute bottom-0 left-0 right-0 bg-white/95 backdrop-blur-xl
             rounded-t-2xl max-h-[70vh] overflow-y-auto
-            animate-[slideUp_0.25s_ease-out]">
+            animate-[slideUp_0.25s_ease-out] shadow-2xl">
             {/* 핸들 바 */}
-            <div className="sticky top-0 bg-zinc-900 pt-3 pb-2 px-4 border-b border-zinc-800">
-              <div className="w-10 h-1 bg-zinc-700 rounded-full mx-auto mb-3" />
+            <div className="sticky top-0 bg-white/95 backdrop-blur-xl pt-3 pb-2 px-4 border-b border-black/[0.06]">
+              <div className="w-10 h-1 bg-[#1d1d1f]/10 rounded-full mx-auto mb-3" />
               <div className="flex items-center justify-between">
-                <p className="text-sm font-semibold text-zinc-300">목차</p>
+                <p className="text-sm font-semibold text-[#1d1d1f]">목차</p>
                 <button
                   onClick={() => setMobileOpen(false)}
-                  className="text-zinc-500 hover:text-zinc-300 p-1"
+                  className="text-[#1d1d1f]/40 hover:text-[#1d1d1f] p-1"
                 >
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -137,10 +137,10 @@ export default function TableOfContents({ content }: { content: string }) {
                 <li key={id} style={{ paddingLeft: `${(level - 1) * 16}px` }}>
                   <button
                     onClick={() => handleClick(id)}
-                    className={`block w-full text-left py-2 px-2 rounded-md text-sm transition-colors
+                    className={`block w-full text-left py-2 px-2 rounded-xl text-sm transition-colors
                       ${activeId === id
-                        ? 'text-emerald-400 font-medium bg-emerald-600/10'
-                        : 'text-zinc-400 hover:text-zinc-200 hover:bg-zinc-800 active:bg-zinc-700'
+                        ? 'text-[#0071e3] font-medium bg-[#0071e3]/[0.06]'
+                        : 'text-[#1d1d1f]/50 hover:text-[#1d1d1f] hover:bg-[#f5f5f7] active:bg-[#e8e8ed]'
                       }`}
                   >
                     {text}
