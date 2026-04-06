@@ -6,7 +6,7 @@ import './globals.css';
 
 export const metadata: Metadata = {
   title: '김과외 프로덕트 로드맵',
-  description: '김과외 5월~6월 프로덕트 로드맵 — 관계 유지 · 에이전트 대비 · 안심결제',
+  description: '김과외 3월–6월 프로덕트 로드맵 — 공고 개편 · AI 검색 · 매출 향상 · 관계 유지 · 판단 보조',
 };
 
 export const viewport: Viewport = {
@@ -27,6 +27,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
             {/* Desktop nav */}
             <nav className="hidden md:flex gap-5 lg:gap-7 text-sm ml-8">
+              <NavLink href="/roadmap/mar">3월</NavLink>
+              <NavLink href="/roadmap/apr">4월</NavLink>
               <NavLink href="/roadmap/may">5월</NavLink>
               <NavLink href="/roadmap/jun">6월</NavLink>
             </nav>
