@@ -5,27 +5,23 @@ import { RoadmapPeriod, RoadmapMeta } from './types';
 const CONTENT_DIR = path.join(process.cwd(), 'src/content');
 
 const FILE_MAP: Record<RoadmapPeriod, string> = {
-  'may-late': '5월후반_관계유지시스템.md',
-  'jun-early': '6월전반_에이전트대비개편.md',
-  'jun-late': '6월후반_안심결제_요금체계.md',
+  'may': '5월_로드맵.md',
+  'jun': '6월_로드맵.md',
 };
 
 const TITLES: Record<RoadmapPeriod, string> = {
-  'may-late': '알림톡 기반 관계 유지 시스템 + 코칭 리포트',
-  'jun-early': '에이전트 시대 대비 개편',
-  'jun-late': '안심결제 전국 도입 + 요금 체계 개선',
+  'may': '관계 유지 시스템 + 코칭 리포트 + 에이전트 기반 설계',
+  'jun': '안심결제 전국 도입 + 요금 체계 개선',
 };
 
 const SUBTITLES: Record<RoadmapPeriod, string> = {
-  'may-late': '매주 체크인 · 코칭 리포트 · 중재 · 프로필 채우기',
-  'jun-early': '추천카드 · 플레이빙 · taxonomy · 에이전트 API 설계',
-  'jun-late': '안심결제 전국 확대 · 일반결제 대비 요금 역전 해소',
+  'may': '매주 체크인 · 코칭 리포트 · 중재 · 에이전트 API · 프로필 구조화',
+  'jun': '안심결제 전국 확대 · 일반결제 대비 요금 역전 해소',
 };
 
 const DESCRIPTIONS: Record<RoadmapPeriod, string> = {
-  'may-late': '매칭 이후 끊기는 관계를 매주 체크인으로 유지하고, 이상 신호 감지 시 코칭 리포트 → 중재 → 재매칭으로 연결',
-  'jun-early': '선생님 프로필·매칭 결과·학부모 요구사항을 구조화하여 에이전트가 김과외를 신뢰할 수 있는 실행 레이어 구축',
-  'jun-late': '안심결제를 전국으로 확대하고, 안심결제 이용요금이 일반결제보다 낮은 구조적 문제를 해결',
+  'may': '매칭 이후 끊기는 관계를 매주 체크인으로 유지하고, 이상 신호 감지 시 코칭 리포트 → 중재 → 재매칭으로 연결. 에이전트가 김과외를 신뢰할 수 있는 데이터 구조와 API 설계 포함.',
+  'jun': '안심결제를 전국으로 확대하고, 안심결제 이용요금이 일반결제보다 낮은 구조적 문제를 해결',
 };
 
 export function getDocContent(period: RoadmapPeriod): string {

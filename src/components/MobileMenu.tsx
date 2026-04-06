@@ -5,9 +5,8 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
 const links = [
-  { href: '/roadmap/may-late', label: '5월 후반' },
-  { href: '/roadmap/jun-early', label: '6월 전반' },
-  { href: '/roadmap/jun-late', label: '6월 후반' },
+  { href: '/roadmap/may', label: '5월 로드맵' },
+  { href: '/roadmap/jun', label: '6월 로드맵' },
 ];
 
 export default function MobileMenu() {

@@ -4,22 +4,15 @@ import { RoadmapPeriod, PERIOD_DATES } from '@/lib/types';
 
 const cards: { period: RoadmapPeriod; href: string; icon: string; status: string; statusColor: string }[] = [
   {
-    period: 'may-late',
-    href: '/roadmap/may-late',
+    period: 'may',
+    href: '/roadmap/may',
     icon: '🔔',
     status: '핵심',
     statusColor: 'bg-red-500/20 text-red-400',
   },
   {
-    period: 'jun-early',
-    href: '/roadmap/jun-early',
-    icon: '🤖',
-    status: '준비',
-    statusColor: 'bg-amber-500/20 text-amber-400',
-  },
-  {
-    period: 'jun-late',
-    href: '/roadmap/jun-late',
+    period: 'jun',
+    href: '/roadmap/jun',
     icon: '💳',
     status: '준비',
     statusColor: 'bg-blue-500/20 text-blue-400',
@@ -35,7 +28,7 @@ export default function Home() {
           김과외 <span className="text-emerald-400">프로덕트 로드맵</span>
         </h1>
         <p className="text-zinc-400 text-sm sm:text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
-          5월 패치 ~ 6월 개편 기획 문서. 2주 단위로 분리하여 관리합니다.
+          5월~6월 기획 문서. 월 단위로 분리하여 관리합니다.
         </p>
       </div>
 
@@ -64,7 +57,7 @@ export default function Home() {
       </div>
 
       {/* Cards */}
-      <div className="grid gap-3 sm:gap-5 md:grid-cols-3">
+      <div className="grid gap-3 sm:gap-5 md:grid-cols-2">
         {cards.map(({ period, href, icon, status, statusColor }) => {
           const meta = getDocMeta(period);
           return (

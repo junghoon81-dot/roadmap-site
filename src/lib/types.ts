@@ -1,4 +1,4 @@
-export type RoadmapPeriod = 'may-late' | 'jun-early' | 'jun-late';
+export type RoadmapPeriod = 'may' | 'jun';
 
 export interface RoadmapMeta {
   period: RoadmapPeriod;
@@ -10,13 +10,11 @@ export interface RoadmapMeta {
 }
 
 export const PERIOD_LABELS: Record<RoadmapPeriod, string> = {
-  'may-late': '5월 후반',
-  'jun-early': '6월 전반',
-  'jun-late': '6월 후반',
+  'may': '5월 로드맵',
+  'jun': '6월 로드맵',
 };
 
 export const PERIOD_DATES: Record<RoadmapPeriod, string> = {
-  'may-late': '5/3주차 ~ 5/4주차',
-  'jun-early': '6/1주차 ~ 6/2주차',
-  'jun-late': '6/3주차 ~ 6/4주차',
+  'may': '5월',
+  'jun': '6월',
 };
