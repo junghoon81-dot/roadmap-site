@@ -100,7 +100,7 @@ const months: {
     highlight: true,
     items: [
       { axis: 1, text: '재매칭 자동 추천 v1, 다른 과목 원클릭 재매칭' },
-      { axis: 2, text: '안심결제 온보딩 넛지 (성사 시 디폴트 제안)' },
+      { axis: 2, text: '안심결제 지역 확대 (현재 서울만 → 수도권+광역시)' },
       { axis: 3, text: '공고 즉시 AI 매칭 추천 (적합 선생님 3명 + 추천이유카드)' },
       { axis: 4, text: '성수기 마케팅 (SEO x 높아진 성사율)' },
     ],
@@ -112,7 +112,7 @@ const months: {
     statusColor: 'bg-[#0071e3]/10 text-[#0071e3]',
     items: [
       { axis: 1, text: '코칭리포트 AI 자동화, 선생님 등급제 v1' },
-      { axis: 2, text: '안심결제 정산 주기 최적화' },
+      { axis: 2, text: '안심결제 선생님 서브몰 등록률 개선 + 정산 주기 최적화' },
       { axis: 3, text: '매칭 알고리즘에 taxonomy 피드백 루프 적용' },
       { axis: 4, text: '휴면 학부모 21만명 롤링 알림톡' },
     ],
@@ -124,7 +124,7 @@ const months: {
     statusColor: 'bg-[#af52de]/10 text-[#af52de]',
     items: [
       { axis: 1, text: '교육 관계 대시보드 (학부모 수업현황, 선생님 코칭현황)' },
-      { axis: 2, text: '미사용자 전환 캠페인' },
+      { axis: 2, text: '안심결제 전국 확대 완료 + 직접결제 공고 전환 유도' },
       { axis: 3, text: '이상징후 감지 v2, 선생님 평가 모델 v1' },
       { axis: 4, text: '추천인 프로그램 (만족 학부모 지인 추천)' },
     ],
