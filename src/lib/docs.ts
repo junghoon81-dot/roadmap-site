@@ -10,18 +10,18 @@ const FILE_MAP: Record<RoadmapPeriod, string> = {
 };
 
 const TITLES: Record<RoadmapPeriod, string> = {
-  'may': '관계 유지 시스템 + 코칭 리포트 + 에이전트 기반 설계',
-  'jun': '안심결제 전국 도입 + 요금 체계 개선',
+  'may': '관계 유지 시스템 + 코칭 리포트',
+  'jun': '에이전트 실행 레이어 + 안심결제 전국 도입',
 };
 
 const SUBTITLES: Record<RoadmapPeriod, string> = {
-  'may': '매주 체크인 · 코칭 리포트 · 중재 · 에이전트 API · 프로필 구조화',
-  'jun': '안심결제 전국 확대 · 일반결제 대비 요금 역전 해소',
+  'may': '매주 체크인 · 코칭 리포트 · 중재 · 프로필 구조화',
+  'jun': 'Outcome Graph · 에이전트 API · 중재 고도화 · 안심결제 전국 확대',
 };
 
 const DESCRIPTIONS: Record<RoadmapPeriod, string> = {
-  'may': '매칭 이후 끊기는 관계를 매주 체크인으로 유지하고, 이상 신호 감지 시 코칭 리포트 → 중재 → 재매칭으로 연결. 에이전트가 김과외를 신뢰할 수 있는 데이터 구조와 API 설계 포함.',
-  'jun': '안심결제를 전국으로 확대하고, 안심결제 이용요금이 일반결제보다 낮은 구조적 문제를 해결',
+  'may': '매칭 이후 끊기는 관계를 매주 체크인으로 유지하고, 이상 신호 감지 시 코칭 리포트 → 중재 → 재매칭으로 연결. 에이전트 대비 데이터 축적 기반을 확보합니다.',
+  'jun': '에이전트 시대 대비 실행 레이어 설계(Outcome Graph, API, 위임 구조), 중재 고도화 + 선생님 대시보드, 안심결제 전국 확대 + 요금 역전 해소',
 };
 
 export function getDocContent(period: RoadmapPeriod): string {

@@ -13,7 +13,7 @@ const cards: { period: RoadmapPeriod; href: string; icon: string; status: string
   {
     period: 'jun',
     href: '/roadmap/jun',
-    icon: '💳',
+    icon: '🤖',
     status: '준비',
     statusColor: 'bg-blue-500/20 text-blue-400',
   },
