@@ -4,6 +4,20 @@ import { RoadmapPeriod, PERIOD_DATES } from '@/lib/types';
 
 const cards: { period: RoadmapPeriod; href: string; icon: string; status: string; statusColor: string }[] = [
   {
+    period: 'mar',
+    href: '/roadmap/mar',
+    icon: '📋',
+    status: '완료',
+    statusColor: 'bg-[#34c759]/10 text-[#34c759]',
+  },
+  {
+    period: 'apr',
+    href: '/roadmap/apr',
+    icon: '📈',
+    status: '진행',
+    statusColor: 'bg-[#ff9500]/10 text-[#ff9500]',
+  },
+  {
     period: 'may',
     href: '/roadmap/may',
     icon: '🔔',
@@ -21,14 +35,14 @@ const cards: { period: RoadmapPeriod; href: string; icon: string; status: string
 
 export default function Home() {
   return (
-    <div className="max-w-3xl mx-auto px-4 sm:px-6 py-12 sm:py-20">
+    <div className="max-w-5xl mx-auto px-4 sm:px-6 py-12 sm:py-20">
       {/* Hero */}
       <div className="text-center mb-10 sm:mb-14">
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight leading-[1.08] mb-3">
           김과외 <span className="text-[#0071e3]">프로덕트 로드맵</span>
         </h1>
         <p className="text-[#1d1d1f]/60 text-base sm:text-lg max-w-xl mx-auto leading-relaxed">
-          5월~6월 기획 문서. 월 단위로 분리하여 관리합니다.
+          3월~6월 기획 문서. 월 단위로 분리하여 관리합니다.
         </p>
       </div>
 
@@ -57,7 +71,7 @@ export default function Home() {
       </div>
 
       {/* Cards */}
-      <div className="grid gap-4 sm:gap-5 md:grid-cols-2">
+      <div className="grid gap-4 sm:gap-5 sm:grid-cols-2 lg:grid-cols-4">
         {cards.map(({ period, href, icon, status, statusColor }) => {
           const meta = getDocMeta(period);
           return (
