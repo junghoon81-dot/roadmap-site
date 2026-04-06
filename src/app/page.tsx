@@ -7,8 +7,8 @@ const cards: { period: RoadmapPeriod; href: string; icon: string; status: string
     period: 'mar',
     href: '/roadmap/mar',
     icon: '📋',
-    status: '완료',
-    statusColor: 'bg-[#34c759]/10 text-[#34c759]',
+    status: '진행',
+    statusColor: 'bg-[#ff9500]/10 text-[#ff9500]',
   },
   {
     period: 'apr',
