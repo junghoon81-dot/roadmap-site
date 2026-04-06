@@ -45,7 +45,7 @@ const cards: {
     status: '준비',
     statusColor: 'bg-[#0071e3]/10 text-[#0071e3]',
     phase: 'Phase 2: 판단 보조',
-    phaseDesc: 'AI 즉시 매칭, 이상 징후 감지, SEO 랜딩으로 전환율 개선',
+    phaseDesc: 'AI 즉시 매칭, 이상 징후 감지, 안심결제 전국 도입으로 전환율 개선',
   },
 ];
 
