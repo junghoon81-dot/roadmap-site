@@ -29,13 +29,18 @@
     "codex-review-2026-04-07-03-edtech-retention",
     "codex-review-2026-04-07-04-behavioral-economics",
     "codex-review-2026-04-07-05-supply-side",
-    "codex-review-2026-04-07-06-payment-fintech"
+    "codex-review-2026-04-07-06-payment-fintech",
+    "session-digest-2026-04-07-escrow-archive"
   ],
   "method/cross-analysis": [
     "codex-review-2026-04-07-07-cross-analysis"
   ],
   "method/db-analysis": [
     "data-analysis-2026-04-07-escrow-gap"
+  ],
+  "method/owner-confirmed": [
+    "facts-2026-04-07-escrow-pricing",
+    "session-digest-2026-04-07-escrow-archive"
   ],
   "metric/ltv": [
     "codex-review-2026-04-07-03-edtech-retention"
@@ -44,7 +49,8 @@
     "codex-prompt-2026-04-07-v6-review-01b-retention-revenue",
     "codex-review-2026-04-07-01-ai-product-strategy",
     "codex-review-2026-04-07-02-unit-economics",
-    "data-analysis-2026-04-07-escrow-gap"
+    "data-analysis-2026-04-07-escrow-gap",
+    "facts-2026-04-07-escrow-pricing"
   ],
   "metric/unit-economics": [
     "codex-prompt-2026-04-07-v9-1-review-02-revenue-kpi-data",
@@ -74,6 +80,9 @@
   "topic/archive": [
     "audit-2026-04-07-archive-strategy"
   ],
+  "topic/archive-system": [
+    "session-digest-2026-04-07-escrow-archive"
+  ],
   "topic/checkin": [
     "codex-prompt-2026-04-07-v6-review-03b-survey-dispute",
     "codex-prompt-2026-04-07-v9-1-review-01-checkin-coaching-mediation",
@@ -102,7 +111,9 @@
     "codex-review-2026-04-07-06-payment-fintech",
     "codex-review-2026-04-07-07-cross-analysis",
     "data-analysis-2026-04-07-escrow-gap",
-    "roadmap-2026-06-jun"
+    "facts-2026-04-07-escrow-pricing",
+    "roadmap-2026-06-jun",
+    "session-digest-2026-04-07-escrow-archive"
   ],
   "topic/execution": [
     "codex-prompt-2026-04-07-v6-review-02-feasibility-resources"
@@ -122,7 +133,9 @@
   "topic/payment": [
     "codex-review-2026-04-07-06-payment-fintech",
     "data-analysis-2026-04-07-escrow-gap",
-    "roadmap-2026-03-mar"
+    "facts-2026-04-07-escrow-pricing",
+    "roadmap-2026-03-mar",
+    "session-digest-2026-04-07-escrow-archive"
   ],
   "topic/profile": [
     "codex-review-2026-04-07-05-supply-side"
