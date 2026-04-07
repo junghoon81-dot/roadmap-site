@@ -26,16 +26,18 @@ src/content/archive/
 
 ## 문서 타입 정의
 
-| type | artifact_kind | 한글명 | 설명 |
-|------|--------------|--------|------|
-| roadmap | report | 로드맵 | 월별 전략 로드맵. canonical=true는 최신본 |
-| roadmap-history | report | 로드맵 이력 | 로드맵 이전 버전. canonical=false |
-| codex-prompt | prompt | 코덱스 프롬프트 | Codex에 보낸 검토 요청 원문 |
-| codex-review | report | 코덱스 자문 | Codex 응답. 자문위원별 분석 |
-| data-analysis | report | 데이터 분석 | 갭분석, KPI 분석, 데이터 기반 리포트 |
-| audit | report | 감사 | 아키텍처/프로세스 감사 |
-| sop | sop | SOP | 운영 절차서 |
-| legacy-snapshot | snapshot | 레거시 | 이관 전 원본 스냅샷 |
+| type | artifact_kind | 한글명 | 기본 intent | 기본 authority | 설명 |
+|------|--------------|--------|------------|---------------|------|
+| roadmap | report | 로드맵 | analysis | mixed | 월별 전략 로드맵 |
+| roadmap-history | report | 로드맵 이력 | analysis | mixed | 로드맵 이전 버전 |
+| codex-prompt | prompt | 코덱스 프롬프트 | proposal | proposed | Codex에 보낸 검토 요청 원문 |
+| codex-review | report | 코덱스 자문 | proposal | proposed | Codex 응답. **미확인 제안** |
+| data-analysis | report | 데이터 분석 | analysis | evidence-backed | 갭분석, KPI 분석 |
+| audit | report | 감사 | analysis | evidence-backed | 아키텍처/프로세스 감사 |
+| sop | sop | SOP | analysis | owner-confirmed | 운영 절차서 |
+| legacy-snapshot | snapshot | 레거시 | analysis | mixed | 이관 전 원본 스냅샷 |
+| session-digest | digest | 세션 기록 | session-record | mixed | 코워크 세션 핵심 추출 |
+| facts | fact-registry | 확인 사실 | fact-registry | owner-confirmed | 대표님 확인 사실 레지스트리 |
 
 ## 태그 접두사 체계
 
@@ -65,7 +67,12 @@ src/content/archive/
     "summary_line": "1줄 요약",
     "key_findings": ["발견1", "발견2", "발견3"],
     "related_ids": ["다른-문서-id", ...],
+    "corrects_ids": ["교정-대상-문서-id", ...],
+    "corrected_by_ids": ["이-문서를-교정한-문서-id", ...],
     "series_id": "roadmap-monthly-2026 | standalone | ...",
+    "source_session_id": "lilith-2026-04-07 | (빈 문자열)",
+    "document_intent": "proposal | analysis | session-record | fact-registry",
+    "default_authority": "proposed | evidence-backed | owner-confirmed | mixed",
     "path": "src/content/archive/documents/... (자동 계산)",
     "token_hint": "small | medium | large"
   }

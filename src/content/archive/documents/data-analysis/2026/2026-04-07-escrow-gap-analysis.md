@@ -27,6 +27,8 @@ source_paths:
   - /Users/lilith/김과외_안심결제_갭분석_20260407.docx
 source_type: docx
 series_id: standalone
+document_intent: analysis
+default_authority: evidence-backed
 token_hint: large
 ---
 

@@ -24,6 +24,8 @@ source_paths:
   - /Users/lilith/roadmap-site/src/content/may/5월_로드맵.md
 source_type: markdown
 series_id: roadmap-monthly-2026
+document_intent: analysis
+default_authority: mixed
 token_hint: medium
 ---
 

@@ -25,6 +25,8 @@ source_paths:
   - /Users/lilith/코덱스_검토3_설문_분쟁중재_설계.md
 source_type: markdown
 series_id: codex-v6-thread-03
+document_intent: proposal
+default_authority: proposed
 token_hint: small
 ---
 

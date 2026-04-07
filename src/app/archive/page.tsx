@@ -10,7 +10,7 @@ export default function ArchivePage() {
 
   // Group by type
   const types = Array.from(new Set(entries.map((e) => e.type)));
-  const typeOrder = ['data-analysis', 'codex-review', 'codex-prompt', 'roadmap', 'audit', 'sop'];
+  const typeOrder = ['facts', 'session-digest', 'data-analysis', 'codex-review', 'codex-prompt', 'roadmap', 'audit', 'sop'];
   types.sort((a, b) => {
     const ai = typeOrder.indexOf(a);
     const bi = typeOrder.indexOf(b);

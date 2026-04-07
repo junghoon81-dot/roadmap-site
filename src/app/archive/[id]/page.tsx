@@ -34,6 +34,16 @@ export default async function ArchiveDocPage(props: Props) {
     .map((rid) => index.find((e) => e.id === rid))
     .filter(Boolean);
 
+  // Find correction docs (이 문서를 교정한 문서)
+  const correctedBy = (meta.corrected_by_ids || [])
+    .map((cid: string) => index.find((e) => e.id === cid))
+    .filter(Boolean);
+
+  // Find docs this document corrects
+  const corrects = (meta.corrects_ids || [])
+    .map((cid: string) => index.find((e) => e.id === cid))
+    .filter(Boolean);
+
   return (
     <div>
       {/* Header */}
@@ -72,6 +82,76 @@ export default async function ArchiveDocPage(props: Props) {
             </div>
           )}
         </div>
+
+        {/* Authority / Intent badge */}
+        {(meta.default_authority || meta.document_intent) && (
+          <div className="flex flex-wrap gap-2 mb-4">
+            {meta.document_intent && (
+              <span className={`text-[11px] px-2 py-1 rounded-lg font-medium ${
+                meta.document_intent === 'fact-registry' ? 'bg-amber-50 text-amber-700 border border-amber-200' :
+                meta.document_intent === 'proposal' ? 'bg-purple-50 text-purple-700 border border-purple-200' :
+                meta.document_intent === 'session-record' ? 'bg-teal-50 text-teal-700 border border-teal-200' :
+                'bg-gray-50 text-gray-600 border border-gray-200'
+              }`}>
+                {meta.document_intent === 'proposal' ? '제안/가설' :
+                 meta.document_intent === 'analysis' ? '분석' :
+                 meta.document_intent === 'session-record' ? '세션 기록' :
+                 meta.document_intent === 'fact-registry' ? '확인된 사실' :
+                 meta.document_intent}
+              </span>
+            )}
+            {meta.default_authority && (
+              <span className={`text-[11px] px-2 py-1 rounded-lg font-medium ${
+                meta.default_authority === 'owner-confirmed' ? 'bg-green-50 text-green-700 border border-green-200' :
+                meta.default_authority === 'proposed' ? 'bg-yellow-50 text-yellow-600 border border-yellow-200' :
+                meta.default_authority === 'evidence-backed' ? 'bg-blue-50 text-blue-700 border border-blue-200' :
+                'bg-gray-50 text-gray-600 border border-gray-200'
+              }`}>
+                {meta.default_authority === 'owner-confirmed' ? '대표님 확인' :
+                 meta.default_authority === 'proposed' ? '미확인 제안' :
+                 meta.default_authority === 'evidence-backed' ? '데이터 근거' :
+                 meta.default_authority === 'mixed' ? '혼합 (사실+제안)' :
+                 meta.default_authority}
+              </span>
+            )}
+          </div>
+        )}
+
+        {/* Correction warning banner — 이 문서가 다른 문서에 의해 교정됨 */}
+        {correctedBy.length > 0 && (
+          <div className="bg-red-50 border border-red-200 rounded-xl p-3 mb-4">
+            <span className="text-[11px] text-red-700 font-semibold">⚠️ 이 문서의 일부 내용이 교정되었습니다:</span>
+            <div className="mt-1 flex flex-wrap gap-1.5">
+              {correctedBy.map((c) => c && (
+                <Link
+                  key={c.id}
+                  href={`/archive/${c.id}`}
+                  className="text-[11px] px-2 py-1 bg-white rounded-lg text-red-600 hover:text-red-800 transition-colors shadow-sm border border-red-100"
+                >
+                  {c.title}
+                </Link>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* This document corrects others */}
+        {corrects.length > 0 && (
+          <div className="bg-green-50 border border-green-200 rounded-xl p-3 mb-4">
+            <span className="text-[11px] text-green-700 font-semibold">🔧 이 문서는 다음 문서를 교정합니다:</span>
+            <div className="mt-1 flex flex-wrap gap-1.5">
+              {corrects.map((c) => c && (
+                <Link
+                  key={c.id}
+                  href={`/archive/${c.id}`}
+                  className="text-[11px] px-2 py-1 bg-white rounded-lg text-green-600 hover:text-green-800 transition-colors shadow-sm border border-green-100"
+                >
+                  {c.title}
+                </Link>
+              ))}
+            </div>
+          </div>
+        )}
 
         {/* Related docs */}
         {related.length > 0 && (

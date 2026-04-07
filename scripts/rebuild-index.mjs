@@ -14,12 +14,15 @@ const DOCS_DIR = path.join(ARCHIVE_DIR, 'documents');
 // ── 스키마 정의 ──
 const VALID_TYPES = [
   'roadmap', 'roadmap-history', 'codex-prompt', 'codex-review',
-  'data-analysis', 'audit', 'sop', 'legacy-snapshot'
+  'data-analysis', 'audit', 'sop', 'legacy-snapshot',
+  'session-digest', 'facts'
 ];
-const VALID_ARTIFACT_KINDS = ['report', 'prompt', 'sop', 'snapshot', 'review'];
+const VALID_ARTIFACT_KINDS = ['report', 'prompt', 'sop', 'snapshot', 'review', 'digest', 'fact-registry'];
 const VALID_STATUSES = ['draft', 'final'];
 const VALID_TOKEN_HINTS = ['small', 'medium', 'large'];
 const VALID_TAG_PREFIXES = ['topic/', 'metric/', 'method/', 'period/', 'artifact/'];
+const VALID_DOCUMENT_INTENTS = ['proposal', 'analysis', 'session-record', 'fact-registry', ''];
+const VALID_AUTHORITIES = ['proposed', 'evidence-backed', 'owner-confirmed', 'mixed', ''];
 
 // ── 검증 함수 ──
 const errors = [];
@@ -79,6 +82,21 @@ function validateEntry(fm, filePath, allIds) {
   // canonical은 boolean이어야 함
   if (fm.canonical !== undefined && typeof fm.canonical !== 'boolean') {
     warn(filePath, `canonical이 boolean이 아닙니다: "${fm.canonical}" (${typeof fm.canonical})`);
+  }
+
+  // document_intent 검증
+  if (fm.document_intent && !VALID_DOCUMENT_INTENTS.includes(fm.document_intent)) {
+    fail(filePath, `잘못된 document_intent: "${fm.document_intent}" (허용: ${VALID_DOCUMENT_INTENTS.filter(Boolean).join(', ')})`);
+  }
+
+  // default_authority 검증
+  if (fm.default_authority && !VALID_AUTHORITIES.includes(fm.default_authority)) {
+    fail(filePath, `잘못된 default_authority: "${fm.default_authority}" (허용: ${VALID_AUTHORITIES.filter(Boolean).join(', ')})`);
+  }
+
+  // corrects_ids 배열 검증
+  if (fm.corrects_ids && !Array.isArray(fm.corrects_ids)) {
+    fail(filePath, `corrects_ids가 배열이 아닙니다`);
   }
 }
 
@@ -144,7 +162,12 @@ for (const filePath of files) {
     summary_line: fm.summary_line || '',
     key_findings: Array.isArray(fm.key_findings) ? fm.key_findings : [],
     related_ids: Array.isArray(fm.related_ids) ? fm.related_ids : [],
+    corrects_ids: Array.isArray(fm.corrects_ids) ? fm.corrects_ids : [],
+    corrected_by_ids: [],  // 자동 생성 (corrects_ids 역참조)
     series_id: fm.series_id || '',
+    source_session_id: fm.source_session_id || '',
+    document_intent: fm.document_intent || '',
+    default_authority: fm.default_authority || '',
     path: relPath,
     token_hint: fm.token_hint || 'medium',
   };
@@ -177,6 +200,22 @@ for (const entry of index) {
     if (target && !target.related_ids.includes(entry.id)) {
       target.related_ids.push(entry.id);
       asymmetricFixed++;
+    }
+  }
+}
+
+// corrects_ids → corrected_by_ids 역참조 자동 생성
+let correctionsLinked = 0;
+for (const entry of index) {
+  for (const cid of entry.corrects_ids) {
+    if (!allIdSet.has(cid)) {
+      fail(`(index)`, `"${entry.id}" → corrects 존재하지 않는 id: "${cid}"`);
+      continue;
+    }
+    const target = index.find(e => e.id === cid);
+    if (target && !target.corrected_by_ids.includes(entry.id)) {
+      target.corrected_by_ids.push(entry.id);
+      correctionsLinked++;
     }
   }
 }
@@ -215,6 +254,11 @@ console.log(`\ncanonical: ${canonicalCount}개 true, ${index.length - canonicalC
 // backlinks 자동 생성 리포트
 if (asymmetricFixed > 0) {
   console.log(`\n🔗 backlinks 자동 생성: ${asymmetricFixed}건 (비대칭 → 양방향으로 보완)`);
+}
+
+// corrections 역참조 리포트
+if (correctionsLinked > 0) {
+  console.log(`🔧 corrections 역참조 생성: ${correctionsLinked}건 (corrects → corrected_by 자동 연결)`);
 }
 
 // 경고 출력

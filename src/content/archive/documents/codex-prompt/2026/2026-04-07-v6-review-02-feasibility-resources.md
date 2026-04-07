@@ -24,6 +24,8 @@ source_paths:
   - /Users/lilith/코덱스_검토2_실행가능성_리소스.md
 source_type: markdown
 series_id: codex-v6-thread-02
+document_intent: proposal
+default_authority: proposed
 token_hint: large
 ---
 

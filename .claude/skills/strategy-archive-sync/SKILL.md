@@ -26,11 +26,25 @@
 - **검증 생략 금지**: rebuild-index 에러 또는 빌드 실패 시 커밋하지 않음
 
 ### enum 허용값
-- **type**: roadmap, roadmap-history, codex-prompt, codex-review, data-analysis, audit, sop, legacy-snapshot
-- **artifact_kind**: report, prompt, sop, snapshot, review
+- **type**: roadmap, roadmap-history, codex-prompt, codex-review, data-analysis, audit, sop, legacy-snapshot, session-digest, facts
+- **artifact_kind**: report, prompt, sop, snapshot, review, digest, fact-registry
 - **status**: draft, final
 - **token_hint**: small (<2K토큰), medium (2-8K), large (8K+)
 - **tag 접두사**: topic/, metric/, method/, period/, artifact/
+- **document_intent**: proposal, analysis, session-record, fact-registry (빈 문자열 허용)
+- **default_authority**: proposed, evidence-backed, owner-confirmed, mixed (빈 문자열 허용)
+
+### 사실/가설 구분 규칙
+- `codex-review`, `codex-prompt` → 기본 `document_intent: proposal`, `default_authority: proposed`
+- `data-analysis` → 기본 `document_intent: analysis`, `default_authority: evidence-backed`
+- `session-digest` → 기본 `document_intent: session-record`, `default_authority: mixed`
+- `facts` → 기본 `document_intent: fact-registry`, `default_authority: owner-confirmed`
+- **코덱스 제안(proposed)을 사실(owner-confirmed)로 인용하지 않는다.** 인용 시 반드시 authority를 확인한다.
+
+### 교정 관계
+- `corrects_ids`: 이 문서가 교정하는 문서 id 목록 (frontmatter에 수기 입력)
+- `corrected_by_ids`: 이 문서를 교정한 문서 목록 (rebuild-index가 자동 생성, 수기 입력 불필요)
+- 교정된 문서의 상세 페이지에 경고 배너가 자동 표시됨
 
 ---
 
@@ -47,9 +61,16 @@
 5. 총 예산 상한: 20K 토큰 (초과 시 대표님께 어떤 문서를 우선할지 확인)
 
 ### 로드 우선순위
-1. canonical: true 문서 우선
-2. 최신 date 우선
-3. 요청 태그와 일치도 높은 순
+1. `facts` (owner-confirmed) 문서 최우선 — 확인된 사실부터 로드
+2. 최신 `session-digest` 1~2개 — 최근 맥락 복구
+3. canonical: true 문서 우선
+4. 최신 date 우선
+5. 요청 태그와 일치도 높은 순
+
+### authority 기반 로드 규칙
+- **사실/현황 질문**: `owner-confirmed` + `evidence-backed` 문서만 우선 로드
+- **전략/아이디어 질문**: `proposed` 문서 포함 로드, 단 "미확인 제안" 태그 명시
+- `proposed` 문서의 수치를 사실로 인용하지 않는다
 
 ---
 

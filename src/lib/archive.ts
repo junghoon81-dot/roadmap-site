@@ -15,7 +15,12 @@ export interface ArchiveEntry {
   summary_line: string;
   key_findings: string[];
   related_ids: string[];
+  corrects_ids: string[];
+  corrected_by_ids: string[];
   series_id: string;
+  source_session_id: string;
+  document_intent: string;   // proposal | analysis | session-record | fact-registry
+  default_authority: string;  // proposed | evidence-backed | owner-confirmed | mixed
   path: string;
   token_hint: string;
 }
@@ -59,6 +64,8 @@ const TYPE_LABELS: Record<string, string> = {
   'audit': '감사',
   'sop': 'SOP',
   'legacy-snapshot': '레거시',
+  'session-digest': '세션 기록',
+  'facts': '확인 사실',
 };
 
 export function getTypeLabel(type: string): string {
@@ -72,6 +79,8 @@ const TYPE_COLORS: Record<string, string> = {
   'data-analysis': 'bg-orange-50 text-orange-700',
   'audit': 'bg-red-50 text-red-700',
   'sop': 'bg-gray-100 text-gray-700',
+  'session-digest': 'bg-teal-50 text-teal-700',
+  'facts': 'bg-amber-50 text-amber-700',
 };
 
 export function getTypeColor(type: string): string {

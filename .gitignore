@@ -40,3 +40,6 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 .claude/CLAUDE.md
+
+# 비공개 대화 기록 (공개 아카이브 제외)
+src/content/archive/transcripts/

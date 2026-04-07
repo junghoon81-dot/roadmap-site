@@ -24,6 +24,8 @@ source_paths:
   - /Users/lilith/코덱스_검토1_사업성_매출.md
 source_type: markdown
 series_id: codex-v6-thread-01
+document_intent: proposal
+default_authority: proposed
 token_hint: large
 ---
 
