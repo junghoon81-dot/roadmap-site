@@ -1,84 +1,85 @@
-# 아카이브 엔트리 템플릿
+# 아카이브 문서 템플릿
 
-## Markdown 템플릿
+## Frontmatter 템플릿
 
-```md
+```yaml
 ---
-id: <type>-<yyyy-mm-dd>-<slug>
-title: <문서 제목>
-date: <yyyy-mm-dd>
-type: <roadmap|roadmap-history|codex-prompt|codex-review|data-analysis|audit|sop>
-artifact_kind: <prompt|review|report|protocol|snapshot>
+id: {type}-{YYYY}-{MM}-{DD}-{slug}
+title: "문서 제목 (한글)"
+date: "YYYY-MM-DD"
+type: roadmap | codex-prompt | codex-review | data-analysis | audit | sop | legacy-snapshot
+artifact_kind: report | prompt | sop | snapshot
+status: draft | final
+version: v1
+canonical: true
+period: ""
+tags:
+  - topic/주제명
+  - metric/지표명
+  - period/월
+summary_line: "1줄 요약 (50자 이내 권장)"
+key_findings:
+  - "핵심 발견 1"
+  - "핵심 발견 2"
+  - "핵심 발견 3"
+related_ids:
+  - "관련-문서-id"
+source_paths:
+  - "원본 파일 경로 (참고용)"
+source_type: manual | codex | docx-convert
+token_hint: small | medium | large
+---
+```
+
+## 필드별 작성 가이드
+
+**id 규칙:**
+- `{type}-{date}-{순번 또는 slug}`
+- 예: `codex-review-2026-04-07-01-ai-product-strategy`
+- 예: `roadmap-2026-06-jun`
+- 전체 아카이브에서 유일해야 함
+
+**token_hint 기준:**
+- small: ~2,000 토큰 이하 (짧은 요약/메모)
+- medium: 2,000~8,000 토큰 (일반 분석/로드맵)
+- large: 8,000 토큰 이상 (전체 코덱스 프롬프트, 장문 자문)
+
+**canonical 규칙:**
+- 같은 주제의 최신 버전에만 true
+- 이전 버전은 canonical: false + type을 roadmap-history로 변경
+
+**tags 작성:**
+- 최소 1개 topic/ 태그 필수
+- period/ 태그는 월별 로드맵에 필수
+- 태그값은 영문 kebab-case
+
+## 실제 예시 (codex-review)
+
+```yaml
+---
+id: codex-review-2026-04-07-01-ai-product-strategy
+title: "자문위원 1 — AI 제품 전략"
+date: "2026-04-07"
+type: codex-review
+artifact_kind: report
 status: final
 version: v1
 canonical: true
-period: <mar|apr|may|jun|cross>
+period: ""
 tags:
-  - topic/<topic-1>
-  - topic/<topic-2>
-  - method/<method>
-summary_line: <90~120자 1줄 요약>
+  - topic/ai-strategy
+  - topic/matching
+  - method/recommendation
+summary_line: "AI 매칭·추천 고도화와 자동화 관점에서 3~6월 로드맵 검토"
 key_findings:
-  - <핵심 결론 1>
-  - <핵심 결론 2>
-  - <핵심 결론 3>
+  - "체크인 데이터 → 추천이유카드 자동 생성 파이프라인 권고"
+  - "taxonomy 설계 시 교사 역량 다차원 벡터화 제안"
+  - "AI 중재 시스템의 단계적 자동화 로드맵 제시"
 related_ids:
-  - <related-id-1>
-  - <related-id-2>
+  - "codex-review-2026-04-07-07-cross-analysis"
 source_paths:
-  - <absolute-source-path>
-source_type: <markdown|docx|mixed>
-token_hint: <small|medium|large>
+  - "src/content/archive/작업_아카이브.md (Part 4 lines 1426-1514)"
+source_type: manual
+token_hint: medium
 ---
-
-## 1줄 요약
-
-<summary_line를 조금 더 자연스럽게 풀어쓴 문장>
-
-## 핵심 결론
-
-- <핵심 결론 1>
-- <핵심 결론 2>
-- <핵심 결론 3>
-
-## 전문
-
-<본문>
 ```
-
-## 인덱스 레코드 예시
-
-```json
-{
-  "id": "data-analysis-2026-04-07-escrow-gap",
-  "title": "안심결제 vs 직접결제 순매출 갭 분석",
-  "date": "2026-04-07",
-  "type": "data-analysis",
-  "canonical": true,
-  "tags": [
-    "topic/escrow",
-    "topic/payment",
-    "metric/revenue",
-    "method/db-analysis"
-  ],
-  "summary_line": "안심결제 순매출 갭 20.4%의 구조적 원인을 DB와 자금수지표로 분해한 분석입니다.",
-  "key_findings": [
-    "표면 갭 24.3%는 환불·페이백 반영 후 20.4%로 축소됩니다.",
-    "갭의 45%는 세션 미정산, 55%는 평균 과외비 차이에서 발생합니다.",
-    "요율 22%와 usage_fee 전액 수금이 실질 갭 축소의 핵심입니다."
-  ],
-  "path": "src/content/archive/documents/data-analysis/2026/2026-04-07-escrow-gap-analysis.md",
-  "related_ids": [
-    "codex-prompt-2026-04-07-payment-fintech",
-    "roadmap-2026-06-jun"
-  ]
-}
-```
-
-## 최소 품질 기준
-
-- 제목이 구체적인가
-- 문서 타입이 명확한가
-- 1줄 요약만 읽어도 문서 가치가 보이는가
-- 핵심 결론 3줄이 실제로 결론인가
-- 관련 문서가 최소 1개 이상 연결되는가
