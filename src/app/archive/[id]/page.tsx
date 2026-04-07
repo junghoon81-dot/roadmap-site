@@ -93,7 +93,12 @@ export default async function ArchiveDocPage(props: Props) {
       </div>
 
       {/* Content */}
-      <ArchiveViewer content={content} />
+      <ArchiveViewer
+        content={content}
+        title={meta.title}
+        subtitle={`${meta.date} · ${meta.version}`}
+        downloadName={`${meta.id}.md`}
+      />
     </div>
   );
 }

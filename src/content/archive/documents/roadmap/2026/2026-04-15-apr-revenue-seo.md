@@ -23,6 +23,7 @@ related_ids:
 source_paths:
   - /Users/lilith/roadmap-site/src/content/apr/4월_로드맵.md
 source_type: markdown
+series_id: roadmap-monthly-2026
 token_hint: medium
 ---
 

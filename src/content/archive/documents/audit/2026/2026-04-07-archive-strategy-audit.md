@@ -24,6 +24,7 @@ related_ids:
 source_paths:
   - /Users/lilith/codex-audit-archive-strategy.md
 source_type: markdown
+series_id: standalone
 token_hint: large
 ---
 

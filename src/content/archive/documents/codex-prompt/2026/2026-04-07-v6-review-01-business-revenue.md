@@ -23,6 +23,7 @@ related_ids:
 source_paths:
   - /Users/lilith/코덱스_검토1_사업성_매출.md
 source_type: markdown
+series_id: codex-v6-thread-01
 token_hint: large
 ---
 

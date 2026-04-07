@@ -23,6 +23,7 @@ related_ids:
 source_paths:
   - /Users/lilith/코덱스_검토2_에이전트_전략.md
 source_type: markdown
+series_id: codex-v6-thread-02
 token_hint: small
 ---
 

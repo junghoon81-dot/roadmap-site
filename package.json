@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "prebuild": "node scripts/rebuild-index.mjs",
     "build": "next build",
     "start": "next start",
     "lint": "eslint"
@@ -11,6 +12,7 @@
   "dependencies": {
     "@tailwindcss/typography": "^0.5.19",
     "autoprefixer": "^10.4.27",
+    "gray-matter": "^4.0.3",
     "next": "16.2.2",
     "postcss": "^8.5.8",
     "react": "19.2.4",

@@ -24,6 +24,7 @@ key_findings:
   - "핵심 발견 3"
 related_ids:
   - "관련-문서-id"
+series_id: standalone
 source_paths:
   - "원본 파일 경로 (참고용)"
 source_type: manual | codex | docx-convert
@@ -44,8 +45,13 @@ token_hint: small | medium | large
 - medium: 2,000~8,000 토큰 (일반 분석/로드맵)
 - large: 8,000 토큰 이상 (전체 코덱스 프롬프트, 장문 자문)
 
+**series_id 규칙:**
+- 같은 시리즈(월별 로드맵, 코덱스 쓰레드 등)에 동일 series_id 부여
+- 독립 문서는 `standalone`
+- 예: `roadmap-monthly-2026`, `codex-v6-thread-01`, `codex-review-2026-04`
+
 **canonical 규칙:**
-- 같은 주제의 최신 버전에만 true
+- 같은 series_id 내 최신 버전에만 true
 - 이전 버전은 canonical: false + type을 roadmap-history로 변경
 
 **tags 작성:**

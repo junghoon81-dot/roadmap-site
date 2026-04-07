@@ -26,6 +26,7 @@ related_ids:
 source_paths:
   - /Users/lilith/코덱스_v9.1_검토3_에이전트전략_선생님경험.md
 source_type: markdown
+series_id: codex-v91-thread-03
 token_hint: large
 ---
 

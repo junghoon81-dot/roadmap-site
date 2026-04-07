@@ -26,6 +26,7 @@ related_ids:
 source_paths:
   - /Users/lilith/코덱스_v9.1_검토2_매출논리_지표_데이터전략.md
 source_type: markdown
+series_id: codex-v91-thread-02
 token_hint: large
 ---
 

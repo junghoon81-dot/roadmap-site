@@ -15,6 +15,7 @@ export interface ArchiveEntry {
   summary_line: string;
   key_findings: string[];
   related_ids: string[];
+  series_id: string;
   path: string;
   token_hint: string;
 }

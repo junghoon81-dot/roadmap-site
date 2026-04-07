@@ -22,8 +22,10 @@
       "안심결제 전국 도입 + 요금 역전 해소"
     ],
     "related_ids": [
-      "codex-review-2026-04-07-07-cross-analysis"
+      "codex-review-2026-04-07-07-cross-analysis",
+      "data-analysis-2026-04-07-escrow-gap"
     ],
+    "series_id": "roadmap-monthly-2026",
     "path": "src/content/archive/documents/roadmap/2026/2026-06-01-jun-judgment-escrow.md",
     "token_hint": "medium"
   },
@@ -52,6 +54,7 @@
     "related_ids": [
       "codex-review-2026-04-07-07-cross-analysis"
     ],
+    "series_id": "roadmap-monthly-2026",
     "path": "src/content/archive/documents/roadmap/2026/2026-05-01-may-retention-coaching.md",
     "token_hint": "medium"
   },
@@ -80,6 +83,7 @@
     "related_ids": [
       "codex-review-2026-04-07-07-cross-analysis"
     ],
+    "series_id": "roadmap-monthly-2026",
     "path": "src/content/archive/documents/roadmap/2026/2026-04-15-apr-revenue-seo.md",
     "token_hint": "medium"
   },
@@ -109,6 +113,7 @@
       "codex-review-2026-04-07-07-cross-analysis",
       "data-analysis-2026-04-07-escrow-gap"
     ],
+    "series_id": "standalone",
     "path": "src/content/archive/documents/audit/2026/2026-04-07-archive-strategy-audit.md",
     "token_hint": "large"
   },
@@ -137,6 +142,7 @@
     "related_ids": [
       "codex-review-2026-04-07-02-unit-economics"
     ],
+    "series_id": "codex-v6-thread-01",
     "path": "src/content/archive/documents/codex-prompt/2026/2026-04-07-v6-review-01-business-revenue.md",
     "token_hint": "large"
   },
@@ -165,6 +171,7 @@
     "related_ids": [
       "codex-review-2026-04-07-02-unit-economics"
     ],
+    "series_id": "codex-v6-thread-01",
     "path": "src/content/archive/documents/codex-prompt/2026/2026-04-07-v6-review-01b-retention-revenue.md",
     "token_hint": "small"
   },
@@ -193,6 +200,7 @@
     "related_ids": [
       "codex-review-2026-04-07-01-ai-product-strategy"
     ],
+    "series_id": "codex-v6-thread-02",
     "path": "src/content/archive/documents/codex-prompt/2026/2026-04-07-v6-review-02-feasibility-resources.md",
     "token_hint": "large"
   },
@@ -221,6 +229,7 @@
     "related_ids": [
       "codex-review-2026-04-07-01-ai-product-strategy"
     ],
+    "series_id": "codex-v6-thread-02",
     "path": "src/content/archive/documents/codex-prompt/2026/2026-04-07-v6-review-02b-agent-strategy.md",
     "token_hint": "small"
   },
@@ -250,6 +259,7 @@
     "related_ids": [
       "codex-review-2026-04-07-01-ai-product-strategy"
     ],
+    "series_id": "codex-v6-thread-03",
     "path": "src/content/archive/documents/codex-prompt/2026/2026-04-07-v6-review-03-strategy-competition.md",
     "token_hint": "large"
   },
@@ -279,6 +289,7 @@
     "related_ids": [
       "codex-review-2026-04-07-03-edtech-retention"
     ],
+    "series_id": "codex-v6-thread-03",
     "path": "src/content/archive/documents/codex-prompt/2026/2026-04-07-v6-review-03b-survey-dispute.md",
     "token_hint": "small"
   },
@@ -310,6 +321,7 @@
       "codex-review-2026-04-07-03-edtech-retention",
       "codex-review-2026-04-07-04-behavioral-economics"
     ],
+    "series_id": "codex-v91-thread-01",
     "path": "src/content/archive/documents/codex-prompt/2026/2026-04-07-v9-1-review-01-checkin-coaching-mediation.md",
     "token_hint": "large"
   },
@@ -341,6 +353,7 @@
       "codex-review-2026-04-07-02-unit-economics",
       "data-analysis-2026-04-07-escrow-gap"
     ],
+    "series_id": "codex-v91-thread-02",
     "path": "src/content/archive/documents/codex-prompt/2026/2026-04-07-v9-1-review-02-revenue-kpi-data.md",
     "token_hint": "large"
   },
@@ -372,6 +385,7 @@
       "codex-review-2026-04-07-01-ai-product-strategy",
       "codex-review-2026-04-07-05-supply-side"
     ],
+    "series_id": "codex-v91-thread-03",
     "path": "src/content/archive/documents/codex-prompt/2026/2026-04-07-v9-1-review-03-agent-teacher-experience.md",
     "token_hint": "large"
   },
@@ -400,8 +414,16 @@
     "related_ids": [
       "codex-review-2026-04-07-02-unit-economics",
       "codex-review-2026-04-07-03-edtech-retention",
-      "codex-review-2026-04-07-04-behavioral-economics"
+      "codex-review-2026-04-07-04-behavioral-economics",
+      "codex-prompt-2026-04-07-v6-review-02-feasibility-resources",
+      "codex-prompt-2026-04-07-v6-review-02b-agent-strategy",
+      "codex-prompt-2026-04-07-v6-review-03-strategy-competition",
+      "codex-prompt-2026-04-07-v9-1-review-03-agent-teacher-experience",
+      "codex-review-2026-04-07-05-supply-side",
+      "codex-review-2026-04-07-06-payment-fintech",
+      "codex-review-2026-04-07-07-cross-analysis"
     ],
+    "series_id": "codex-review-2026-04",
     "path": "src/content/archive/documents/codex-review/2026/2026-04-07-review-01-ai-product-strategy.md",
     "token_hint": "medium"
   },
@@ -430,8 +452,16 @@
     "related_ids": [
       "codex-review-2026-04-07-01-ai-product-strategy",
       "codex-review-2026-04-07-03-edtech-retention",
-      "codex-review-2026-04-07-04-behavioral-economics"
+      "codex-review-2026-04-07-04-behavioral-economics",
+      "codex-prompt-2026-04-07-v6-review-01-business-revenue",
+      "codex-prompt-2026-04-07-v6-review-01b-retention-revenue",
+      "codex-prompt-2026-04-07-v9-1-review-02-revenue-kpi-data",
+      "codex-review-2026-04-07-05-supply-side",
+      "codex-review-2026-04-07-06-payment-fintech",
+      "codex-review-2026-04-07-07-cross-analysis",
+      "data-analysis-2026-04-07-escrow-gap"
     ],
+    "series_id": "codex-review-2026-04",
     "path": "src/content/archive/documents/codex-review/2026/2026-04-07-review-02-unit-economics.md",
     "token_hint": "small"
   },
@@ -460,8 +490,14 @@
     "related_ids": [
       "codex-review-2026-04-07-01-ai-product-strategy",
       "codex-review-2026-04-07-02-unit-economics",
-      "codex-review-2026-04-07-04-behavioral-economics"
+      "codex-review-2026-04-07-04-behavioral-economics",
+      "codex-prompt-2026-04-07-v6-review-03b-survey-dispute",
+      "codex-prompt-2026-04-07-v9-1-review-01-checkin-coaching-mediation",
+      "codex-review-2026-04-07-05-supply-side",
+      "codex-review-2026-04-07-06-payment-fintech",
+      "codex-review-2026-04-07-07-cross-analysis"
     ],
+    "series_id": "codex-review-2026-04",
     "path": "src/content/archive/documents/codex-review/2026/2026-04-07-review-03-edtech-retention.md",
     "token_hint": "medium"
   },
@@ -489,8 +525,10 @@
     "related_ids": [
       "codex-review-2026-04-07-01-ai-product-strategy",
       "codex-review-2026-04-07-02-unit-economics",
-      "codex-review-2026-04-07-03-edtech-retention"
+      "codex-review-2026-04-07-03-edtech-retention",
+      "codex-prompt-2026-04-07-v9-1-review-01-checkin-coaching-mediation"
     ],
+    "series_id": "codex-review-2026-04",
     "path": "src/content/archive/documents/codex-review/2026/2026-04-07-review-04-behavioral-economics.md",
     "token_hint": "medium"
   },
@@ -519,8 +557,10 @@
     "related_ids": [
       "codex-review-2026-04-07-01-ai-product-strategy",
       "codex-review-2026-04-07-02-unit-economics",
-      "codex-review-2026-04-07-03-edtech-retention"
+      "codex-review-2026-04-07-03-edtech-retention",
+      "codex-prompt-2026-04-07-v9-1-review-03-agent-teacher-experience"
     ],
+    "series_id": "codex-review-2026-04",
     "path": "src/content/archive/documents/codex-review/2026/2026-04-07-review-05-supply-side.md",
     "token_hint": "medium"
   },
@@ -549,8 +589,10 @@
     "related_ids": [
       "codex-review-2026-04-07-01-ai-product-strategy",
       "codex-review-2026-04-07-02-unit-economics",
-      "codex-review-2026-04-07-03-edtech-retention"
+      "codex-review-2026-04-07-03-edtech-retention",
+      "data-analysis-2026-04-07-escrow-gap"
     ],
+    "series_id": "codex-review-2026-04",
     "path": "src/content/archive/documents/codex-review/2026/2026-04-07-review-06-payment-fintech.md",
     "token_hint": "medium"
   },
@@ -578,8 +620,14 @@
     "related_ids": [
       "codex-review-2026-04-07-01-ai-product-strategy",
       "codex-review-2026-04-07-02-unit-economics",
-      "codex-review-2026-04-07-03-edtech-retention"
+      "codex-review-2026-04-07-03-edtech-retention",
+      "audit-2026-04-07-archive-strategy",
+      "roadmap-2026-03-mar",
+      "roadmap-2026-04-apr",
+      "roadmap-2026-05-may",
+      "roadmap-2026-06-jun"
     ],
+    "series_id": "codex-review-2026-04",
     "path": "src/content/archive/documents/codex-review/2026/2026-04-07-review-07-cross-analysis.md",
     "token_hint": "small"
   },
@@ -609,8 +657,11 @@
     "related_ids": [
       "codex-review-2026-04-07-02-unit-economics",
       "codex-review-2026-04-07-06-payment-fintech",
-      "roadmap-2026-06-jun"
+      "roadmap-2026-06-jun",
+      "audit-2026-04-07-archive-strategy",
+      "codex-prompt-2026-04-07-v9-1-review-02-revenue-kpi-data"
     ],
+    "series_id": "standalone",
     "path": "src/content/archive/documents/data-analysis/2026/2026-04-07-escrow-gap-analysis.md",
     "token_hint": "large"
   },
@@ -639,6 +690,7 @@
     "related_ids": [
       "codex-review-2026-04-07-07-cross-analysis"
     ],
+    "series_id": "roadmap-monthly-2026",
     "path": "src/content/archive/documents/roadmap/2026/2026-03-15-mar-infra-ux.md",
     "token_hint": "medium"
   }

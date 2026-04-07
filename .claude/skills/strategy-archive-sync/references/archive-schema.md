@@ -65,6 +65,7 @@ src/content/archive/
     "summary_line": "1줄 요약",
     "key_findings": ["발견1", "발견2", "발견3"],
     "related_ids": ["다른-문서-id", ...],
+    "series_id": "roadmap-monthly-2026 | standalone | ...",
     "path": "src/content/archive/documents/... (자동 계산)",
     "token_hint": "small | medium | large"
   }

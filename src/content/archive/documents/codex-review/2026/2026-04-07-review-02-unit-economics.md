@@ -25,6 +25,7 @@ related_ids:
 source_paths:
   - /Users/lilith/roadmap-site/src/content/archive/legacy/2026/2026-04-07-flat-archive.md
 source_type: markdown
+series_id: codex-review-2026-04
 token_hint: small
 ---
 

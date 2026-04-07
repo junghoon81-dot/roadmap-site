@@ -26,6 +26,7 @@ related_ids:
 source_paths:
   - /Users/lilith/코덱스_v9.1_검토1_체크인_코칭리포트_중재설계.md
 source_type: markdown
+series_id: codex-v91-thread-01
 token_hint: large
 ---
 

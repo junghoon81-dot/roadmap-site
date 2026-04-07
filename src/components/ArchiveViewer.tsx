@@ -6,9 +6,12 @@ import TableOfContents from './TableOfContents';
 
 interface Props {
   content: string;
+  title?: string;
+  subtitle?: string;
+  downloadName?: string;
 }
 
-export default function ArchiveViewer({ content }: Props) {
+export default function ArchiveViewer({ content, title, subtitle, downloadName }: Props) {
   const [toast, setToast] = useState<string | null>(null);
   const toastTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
@@ -19,7 +22,7 @@ export default function ArchiveViewer({ content }: Props) {
   }, []);
 
   const handleDownload = () => {
-    const filename = `김과외_작업아카이브_${new Date().toISOString().slice(0, 10)}.md`;
+    const filename = downloadName || `김과외_작업아카이브_${new Date().toISOString().slice(0, 10)}.md`;
     const blob = new Blob([content], { type: 'text/markdown; charset=utf-8' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
@@ -47,11 +50,13 @@ export default function ArchiveViewer({ content }: Props) {
           <div className="flex items-center justify-between gap-2">
             <div className="flex items-center gap-2 sm:gap-4 min-w-0">
               <span className="text-sm sm:text-base font-semibold text-[#1d1d1f] truncate tracking-tight">
-                작업 아카이브
+                {title || '작업 아카이브'}
               </span>
-              <span className="hidden sm:inline text-xs text-[#1d1d1f]/40">
-                2026-04-07 전체 기록
-              </span>
+              {(subtitle || !title) && (
+                <span className="hidden sm:inline text-xs text-[#1d1d1f]/40">
+                  {subtitle || '2026-04-07 전체 기록'}
+                </span>
+              )}
               <span className="text-[11px] font-mono px-2 py-0.5 bg-[#ff9500]/10 text-[#ff9500] rounded-full whitespace-nowrap">
                 아카이브
               </span>
