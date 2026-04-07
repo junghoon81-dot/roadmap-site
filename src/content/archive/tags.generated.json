@@ -1,0 +1,177 @@
+{
+  "artifact/prompt": [
+    "audit-2026-04-07-archive-strategy",
+    "codex-prompt-2026-04-07-v6-review-01b-retention-revenue",
+    "codex-prompt-2026-04-07-v6-review-02b-agent-strategy",
+    "codex-prompt-2026-04-07-v6-review-03b-survey-dispute"
+  ],
+  "artifact/review": [
+    "codex-prompt-2026-04-07-v6-review-01-business-revenue",
+    "codex-prompt-2026-04-07-v6-review-02-feasibility-resources",
+    "codex-prompt-2026-04-07-v6-review-03-strategy-competition",
+    "codex-prompt-2026-04-07-v9-1-review-01-checkin-coaching-mediation",
+    "codex-prompt-2026-04-07-v9-1-review-02-revenue-kpi-data",
+    "codex-prompt-2026-04-07-v9-1-review-03-agent-teacher-experience"
+  ],
+  "method/codex": [
+    "audit-2026-04-07-archive-strategy",
+    "codex-prompt-2026-04-07-v6-review-01-business-revenue",
+    "codex-prompt-2026-04-07-v6-review-01b-retention-revenue",
+    "codex-prompt-2026-04-07-v6-review-02-feasibility-resources",
+    "codex-prompt-2026-04-07-v6-review-02b-agent-strategy",
+    "codex-prompt-2026-04-07-v6-review-03-strategy-competition",
+    "codex-prompt-2026-04-07-v6-review-03b-survey-dispute",
+    "codex-prompt-2026-04-07-v9-1-review-01-checkin-coaching-mediation",
+    "codex-prompt-2026-04-07-v9-1-review-02-revenue-kpi-data",
+    "codex-prompt-2026-04-07-v9-1-review-03-agent-teacher-experience",
+    "codex-review-2026-04-07-01-ai-product-strategy",
+    "codex-review-2026-04-07-02-unit-economics",
+    "codex-review-2026-04-07-03-edtech-retention",
+    "codex-review-2026-04-07-04-behavioral-economics",
+    "codex-review-2026-04-07-05-supply-side",
+    "codex-review-2026-04-07-06-payment-fintech"
+  ],
+  "method/cross-analysis": [
+    "codex-review-2026-04-07-07-cross-analysis"
+  ],
+  "method/db-analysis": [
+    "data-analysis-2026-04-07-escrow-gap"
+  ],
+  "metric/ltv": [
+    "codex-review-2026-04-07-03-edtech-retention"
+  ],
+  "metric/revenue": [
+    "codex-prompt-2026-04-07-v6-review-01b-retention-revenue",
+    "codex-review-2026-04-07-01-ai-product-strategy",
+    "codex-review-2026-04-07-02-unit-economics",
+    "data-analysis-2026-04-07-escrow-gap"
+  ],
+  "metric/unit-economics": [
+    "codex-prompt-2026-04-07-v9-1-review-02-revenue-kpi-data",
+    "data-analysis-2026-04-07-escrow-gap"
+  ],
+  "period/apr": [
+    "roadmap-2026-04-apr"
+  ],
+  "period/jun": [
+    "roadmap-2026-06-jun"
+  ],
+  "period/mar": [
+    "roadmap-2026-03-mar"
+  ],
+  "period/may": [
+    "codex-prompt-2026-04-07-v9-1-review-01-checkin-coaching-mediation",
+    "codex-prompt-2026-04-07-v9-1-review-02-revenue-kpi-data",
+    "codex-prompt-2026-04-07-v9-1-review-03-agent-teacher-experience",
+    "roadmap-2026-05-may"
+  ],
+  "topic/ai-agent": [
+    "codex-prompt-2026-04-07-v6-review-02b-agent-strategy",
+    "codex-prompt-2026-04-07-v6-review-03-strategy-competition",
+    "codex-prompt-2026-04-07-v9-1-review-03-agent-teacher-experience",
+    "codex-review-2026-04-07-01-ai-product-strategy"
+  ],
+  "topic/archive": [
+    "audit-2026-04-07-archive-strategy"
+  ],
+  "topic/checkin": [
+    "codex-prompt-2026-04-07-v6-review-03b-survey-dispute",
+    "codex-prompt-2026-04-07-v9-1-review-01-checkin-coaching-mediation",
+    "roadmap-2026-05-may"
+  ],
+  "topic/coaching": [
+    "codex-prompt-2026-04-07-v9-1-review-01-checkin-coaching-mediation",
+    "roadmap-2026-05-may"
+  ],
+  "topic/competition": [
+    "codex-prompt-2026-04-07-v6-review-03-strategy-competition"
+  ],
+  "topic/data-moat": [
+    "codex-review-2026-04-07-01-ai-product-strategy"
+  ],
+  "topic/data-strategy": [
+    "codex-prompt-2026-04-07-v9-1-review-02-revenue-kpi-data"
+  ],
+  "topic/dispute": [
+    "codex-prompt-2026-04-07-v6-review-03b-survey-dispute",
+    "codex-prompt-2026-04-07-v9-1-review-01-checkin-coaching-mediation"
+  ],
+  "topic/escrow": [
+    "codex-review-2026-04-07-02-unit-economics",
+    "codex-review-2026-04-07-03-edtech-retention",
+    "codex-review-2026-04-07-06-payment-fintech",
+    "codex-review-2026-04-07-07-cross-analysis",
+    "data-analysis-2026-04-07-escrow-gap",
+    "roadmap-2026-06-jun"
+  ],
+  "topic/execution": [
+    "codex-prompt-2026-04-07-v6-review-02-feasibility-resources"
+  ],
+  "topic/fintech": [
+    "codex-review-2026-04-07-06-payment-fintech"
+  ],
+  "topic/information-architecture": [
+    "audit-2026-04-07-archive-strategy"
+  ],
+  "topic/matching": [
+    "roadmap-2026-03-mar"
+  ],
+  "topic/nudge": [
+    "codex-review-2026-04-07-04-behavioral-economics"
+  ],
+  "topic/payment": [
+    "codex-review-2026-04-07-06-payment-fintech",
+    "data-analysis-2026-04-07-escrow-gap",
+    "roadmap-2026-03-mar"
+  ],
+  "topic/profile": [
+    "codex-review-2026-04-07-05-supply-side"
+  ],
+  "topic/resources": [
+    "codex-prompt-2026-04-07-v6-review-02-feasibility-resources"
+  ],
+  "topic/retention": [
+    "codex-prompt-2026-04-07-v6-review-01b-retention-revenue",
+    "codex-review-2026-04-07-03-edtech-retention",
+    "roadmap-2026-05-may"
+  ],
+  "topic/revenue": [
+    "codex-prompt-2026-04-07-v6-review-01-business-revenue",
+    "codex-prompt-2026-04-07-v9-1-review-02-revenue-kpi-data",
+    "roadmap-2026-04-apr",
+    "roadmap-2026-06-jun"
+  ],
+  "topic/search": [
+    "roadmap-2026-03-mar"
+  ],
+  "topic/seo": [
+    "roadmap-2026-04-apr"
+  ],
+  "topic/strategy": [
+    "codex-prompt-2026-04-07-v6-review-01-business-revenue",
+    "codex-prompt-2026-04-07-v6-review-02b-agent-strategy",
+    "codex-prompt-2026-04-07-v6-review-03-strategy-competition",
+    "codex-review-2026-04-07-07-cross-analysis"
+  ],
+  "topic/supply": [
+    "codex-prompt-2026-04-07-v9-1-review-03-agent-teacher-experience",
+    "codex-review-2026-04-07-05-supply-side"
+  ],
+  "topic/survey": [
+    "codex-prompt-2026-04-07-v6-review-03b-survey-dispute"
+  ],
+  "topic/taxonomy": [
+    "roadmap-2026-06-jun"
+  ],
+  "topic/teacher": [
+    "codex-prompt-2026-04-07-v9-1-review-03-agent-teacher-experience",
+    "codex-review-2026-04-07-05-supply-side",
+    "roadmap-2026-04-apr"
+  ],
+  "topic/unit-economics": [
+    "codex-review-2026-04-07-02-unit-economics"
+  ],
+  "topic/ux": [
+    "codex-review-2026-04-07-04-behavioral-economics"
+  ]
+}

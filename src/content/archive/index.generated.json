@@ -1,0 +1,645 @@
+[
+  {
+    "id": "roadmap-2026-06-jun",
+    "title": "김과외 6월 로드맵",
+    "date": "2026-06-01",
+    "type": "roadmap",
+    "artifact_kind": "report",
+    "status": "final",
+    "version": "v1",
+    "canonical": true,
+    "period": "jun",
+    "tags": [
+      "topic/escrow",
+      "topic/revenue",
+      "topic/taxonomy",
+      "period/jun"
+    ],
+    "summary_line": "판단 시스템 구축 + 매출 장치 확보. 설문요청·추천이유카드·프로필입력률·플레이빙·taxonomy·매출장치 8개·안심결제 전국 도입.",
+    "key_findings": [
+      "설문요청으로 판단 데이터 축적 + 추천이유카드 고도화",
+      "매칭 taxonomy 구축 + 소소한 매출 포인트 8개",
+      "안심결제 전국 도입 + 요금 역전 해소"
+    ],
+    "related_ids": [
+      "codex-review-2026-04-07-07-cross-analysis"
+    ],
+    "path": "src/content/archive/documents/roadmap/2026/2026-06-01-jun-judgment-escrow.md",
+    "token_hint": "medium"
+  },
+  {
+    "id": "roadmap-2026-05-may",
+    "title": "김과외 5월 로드맵",
+    "date": "2026-05-01",
+    "type": "roadmap",
+    "artifact_kind": "report",
+    "status": "final",
+    "version": "v1",
+    "canonical": true,
+    "period": "may",
+    "tags": [
+      "topic/retention",
+      "topic/checkin",
+      "topic/coaching",
+      "period/may"
+    ],
+    "summary_line": "온플랫폼 관계 지속 특집. 매주 체크인으로 관계 유지, 이상 신호 감지 시 코칭 리포트 → 중재 → 재매칭 연결.",
+    "key_findings": [
+      "매주 체크인 파이프라인 MVP로 침묵 이탈 감지",
+      "코칭 리포트 자동 생성 + 이상징후 기반 중재 개입",
+      "프로필 구조화 + 추천이유카드 고도화"
+    ],
+    "related_ids": [
+      "codex-review-2026-04-07-07-cross-analysis"
+    ],
+    "path": "src/content/archive/documents/roadmap/2026/2026-05-01-may-retention-coaching.md",
+    "token_hint": "medium"
+  },
+  {
+    "id": "roadmap-2026-04-apr",
+    "title": "김과외 4월 로드맵",
+    "date": "2026-04-15",
+    "type": "roadmap",
+    "artifact_kind": "report",
+    "status": "final",
+    "version": "v1",
+    "canonical": true,
+    "period": "apr",
+    "tags": [
+      "topic/revenue",
+      "topic/seo",
+      "topic/teacher",
+      "period/apr"
+    ],
+    "summary_line": "현욱님 기획 3개 파트. 매출 향상 포인트 8개, SEO 프로그래매틱 랜딩 10만 페이지, 선생님 편의성 강화.",
+    "key_findings": [
+      "매출 향상 포인트 8개(성사누락·시범전환·FOMO·리뷰·이탈복구·부스트·휴면·설문)",
+      "SEO 10만+ 페이지 자동 생성(선생님 프로필 비로그인 공개)",
+      "선생님 편의성(수업일정 알리미·수업관리·안 읽은 공고 필터)"
+    ],
+    "related_ids": [
+      "codex-review-2026-04-07-07-cross-analysis"
+    ],
+    "path": "src/content/archive/documents/roadmap/2026/2026-04-15-apr-revenue-seo.md",
+    "token_hint": "medium"
+  },
+  {
+    "id": "audit-2026-04-07-archive-strategy",
+    "title": "코덱스 감사 프롬프트: 아카이브 전략 시스템 설계",
+    "date": "2026-04-07",
+    "type": "audit",
+    "artifact_kind": "prompt",
+    "status": "final",
+    "version": "v1",
+    "canonical": true,
+    "period": "cross",
+    "tags": [
+      "topic/archive",
+      "topic/information-architecture",
+      "method/codex",
+      "artifact/prompt"
+    ],
+    "summary_line": "전략 분석 아카이브의 정보구조 설계, 마이그레이션 계획, 코워크 스킬 설계, 컨텍스트 로딩, UI 개선, 실행 우선순위를 다루는 6개 질문 코덱스 감사 프롬프트.",
+    "key_findings": [
+      "단일 md 아카이브 → 다중 md + generated index JSON 2계층 전환 설계",
+      "기존 전략 파일 30개+ 마이그레이션 매핑 및 3-Phase 실행 계획",
+      "코워크 스킬 자동 저장/로드 모드 설계 및 선택적 컨텍스트 로딩 구조"
+    ],
+    "related_ids": [
+      "codex-review-2026-04-07-07-cross-analysis",
+      "data-analysis-2026-04-07-escrow-gap"
+    ],
+    "path": "src/content/archive/documents/audit/2026/2026-04-07-archive-strategy-audit.md",
+    "token_hint": "large"
+  },
+  {
+    "id": "codex-prompt-2026-04-07-v6-review-01-business-revenue",
+    "title": "코덱스 검토 쓰레드 1: 사업성·매출 관점",
+    "date": "2026-04-07",
+    "type": "codex-prompt",
+    "artifact_kind": "prompt",
+    "status": "final",
+    "version": "v6",
+    "canonical": true,
+    "period": "may",
+    "tags": [
+      "topic/revenue",
+      "topic/strategy",
+      "method/codex",
+      "artifact/review"
+    ],
+    "summary_line": "v6 로드맵의 사업성과 매출 관점에서의 코덱스 검토 프롬프트 및 답변.",
+    "key_findings": [
+      "사업성·매출 관점에서 로드맵 항목별 기여도 평가",
+      "매출 공식(유입×성사율×건단가×재이용률) 기반 분석",
+      "빠진 매출 레버와 실행 순서 제안"
+    ],
+    "related_ids": [
+      "codex-review-2026-04-07-02-unit-economics"
+    ],
+    "path": "src/content/archive/documents/codex-prompt/2026/2026-04-07-v6-review-01-business-revenue.md",
+    "token_hint": "large"
+  },
+  {
+    "id": "codex-prompt-2026-04-07-v6-review-01b-retention-revenue",
+    "title": "코덱스 검토 관점 1: 재이용률 → 매출 성장 논리",
+    "date": "2026-04-07",
+    "type": "codex-prompt",
+    "artifact_kind": "prompt",
+    "status": "final",
+    "version": "v6b",
+    "canonical": false,
+    "period": "may",
+    "tags": [
+      "topic/retention",
+      "metric/revenue",
+      "method/codex",
+      "artifact/prompt"
+    ],
+    "summary_line": "재이용률과 매출 성장 논리 관점에서의 코덱스 검토 프롬프트.",
+    "key_findings": [
+      "재이용률 중심 매출 성장 논리 검토",
+      "직접결제 이탈 구조 분석 요청",
+      "retention loop 설계 검토"
+    ],
+    "related_ids": [
+      "codex-review-2026-04-07-02-unit-economics"
+    ],
+    "path": "src/content/archive/documents/codex-prompt/2026/2026-04-07-v6-review-01b-retention-revenue.md",
+    "token_hint": "small"
+  },
+  {
+    "id": "codex-prompt-2026-04-07-v6-review-02-feasibility-resources",
+    "title": "코덱스 검토 쓰레드 2: 실행 가능성·리소스 관점",
+    "date": "2026-04-07",
+    "type": "codex-prompt",
+    "artifact_kind": "prompt",
+    "status": "final",
+    "version": "v6",
+    "canonical": true,
+    "period": "may",
+    "tags": [
+      "topic/execution",
+      "topic/resources",
+      "method/codex",
+      "artifact/review"
+    ],
+    "summary_line": "v6 로드맵의 실행 가능성과 리소스 배분 관점에서의 코덱스 검토 프롬프트 및 답변.",
+    "key_findings": [
+      "개발팀 규모 대비 실행 가능성 평가",
+      "리소스 병목과 우선순위 재배열 제안",
+      "빠진 인프라/운영 항목 식별"
+    ],
+    "related_ids": [
+      "codex-review-2026-04-07-01-ai-product-strategy"
+    ],
+    "path": "src/content/archive/documents/codex-prompt/2026/2026-04-07-v6-review-02-feasibility-resources.md",
+    "token_hint": "large"
+  },
+  {
+    "id": "codex-prompt-2026-04-07-v6-review-02b-agent-strategy",
+    "title": "코덱스 검토 관점 2: 에이전트 시대 대비 전략",
+    "date": "2026-04-07",
+    "type": "codex-prompt",
+    "artifact_kind": "prompt",
+    "status": "final",
+    "version": "v6b",
+    "canonical": false,
+    "period": "may",
+    "tags": [
+      "topic/ai-agent",
+      "topic/strategy",
+      "method/codex",
+      "artifact/prompt"
+    ],
+    "summary_line": "에이전트 시대 대비 전략 관점에서의 코덱스 검토 프롬프트.",
+    "key_findings": [
+      "AI 에이전트 시대 김과외 포지셔닝 검토",
+      "대체불가능 자산 식별 요청",
+      "에이전트 매칭 v1/v2 매출 기여도 분석"
+    ],
+    "related_ids": [
+      "codex-review-2026-04-07-01-ai-product-strategy"
+    ],
+    "path": "src/content/archive/documents/codex-prompt/2026/2026-04-07-v6-review-02b-agent-strategy.md",
+    "token_hint": "small"
+  },
+  {
+    "id": "codex-prompt-2026-04-07-v6-review-03-strategy-competition",
+    "title": "코덱스 검토 쓰레드 3: 전략·경쟁·에이전트 시대 관점",
+    "date": "2026-04-07",
+    "type": "codex-prompt",
+    "artifact_kind": "prompt",
+    "status": "final",
+    "version": "v6",
+    "canonical": true,
+    "period": "may",
+    "tags": [
+      "topic/competition",
+      "topic/strategy",
+      "topic/ai-agent",
+      "method/codex",
+      "artifact/review"
+    ],
+    "summary_line": "v6 로드맵의 전략·경쟁·에이전트 시대 관점에서의 코덱스 검토 프롬프트 및 답변.",
+    "key_findings": [
+      "경쟁 환경(숨고, 탈잉, 클래스101) 대비 전략 평가",
+      "에이전트 시대 플랫폼 방어 전략",
+      "taxonomy와 데이터 moat 구축 우선순위"
+    ],
+    "related_ids": [
+      "codex-review-2026-04-07-01-ai-product-strategy"
+    ],
+    "path": "src/content/archive/documents/codex-prompt/2026/2026-04-07-v6-review-03-strategy-competition.md",
+    "token_hint": "large"
+  },
+  {
+    "id": "codex-prompt-2026-04-07-v6-review-03b-survey-dispute",
+    "title": "코덱스 검토 관점 3: 설문 + 분쟁 중재 프로세스 설계",
+    "date": "2026-04-07",
+    "type": "codex-prompt",
+    "artifact_kind": "prompt",
+    "status": "final",
+    "version": "v6b",
+    "canonical": false,
+    "period": "may",
+    "tags": [
+      "topic/survey",
+      "topic/dispute",
+      "topic/checkin",
+      "method/codex",
+      "artifact/prompt"
+    ],
+    "summary_line": "설문 체계와 분쟁 중재 프로세스 설계 관점에서의 코덱스 검토 프롬프트.",
+    "key_findings": [
+      "4시점 설문 체계 설계 검토",
+      "분쟁 중재 프로세스 단계별 설계",
+      "체크인 → 이상징후 → 중재 파이프라인 연결"
+    ],
+    "related_ids": [
+      "codex-review-2026-04-07-03-edtech-retention"
+    ],
+    "path": "src/content/archive/documents/codex-prompt/2026/2026-04-07-v6-review-03b-survey-dispute.md",
+    "token_hint": "small"
+  },
+  {
+    "id": "codex-prompt-2026-04-07-v9-1-review-01-checkin-coaching-mediation",
+    "title": "Codex 검토 관점 1: 체크인 + 코칭 리포트 + 중재 UX/운영 설계",
+    "date": "2026-04-07",
+    "type": "codex-prompt",
+    "artifact_kind": "prompt",
+    "status": "final",
+    "version": "v9.1",
+    "canonical": true,
+    "period": "may",
+    "tags": [
+      "topic/checkin",
+      "topic/coaching",
+      "topic/dispute",
+      "method/codex",
+      "artifact/review",
+      "period/may"
+    ],
+    "summary_line": "v9.1 로드맵의 체크인·코칭리포트·중재 UX/운영 설계에 대한 코덱스 검토 프롬프트 및 답변.",
+    "key_findings": [
+      "체크인 파이프라인 MVP의 UX/운영 설계 심층 검토",
+      "코칭 리포트의 데이터 소스와 자동화 수준 평가",
+      "중재 프로세스의 단계별 에스컬레이션 설계"
+    ],
+    "related_ids": [
+      "codex-review-2026-04-07-03-edtech-retention",
+      "codex-review-2026-04-07-04-behavioral-economics"
+    ],
+    "path": "src/content/archive/documents/codex-prompt/2026/2026-04-07-v9-1-review-01-checkin-coaching-mediation.md",
+    "token_hint": "large"
+  },
+  {
+    "id": "codex-prompt-2026-04-07-v9-1-review-02-revenue-kpi-data",
+    "title": "Codex 검토 관점 2: 매출 논리 + 지표 체계 + 데이터 축적 전략",
+    "date": "2026-04-07",
+    "type": "codex-prompt",
+    "artifact_kind": "prompt",
+    "status": "final",
+    "version": "v9.1",
+    "canonical": true,
+    "period": "may",
+    "tags": [
+      "topic/revenue",
+      "metric/unit-economics",
+      "topic/data-strategy",
+      "method/codex",
+      "artifact/review",
+      "period/may"
+    ],
+    "summary_line": "v9.1 로드맵의 매출 논리·지표 체계·데이터 축적 전략에 대한 코덱스 검토 프롬프트 및 답변.",
+    "key_findings": [
+      "매출 공식 레버별 기여도 정량 분석",
+      "KPI 체계와 대시보드 설계 검토",
+      "데이터 축적 전략과 taxonomy 연계"
+    ],
+    "related_ids": [
+      "codex-review-2026-04-07-02-unit-economics",
+      "data-analysis-2026-04-07-escrow-gap"
+    ],
+    "path": "src/content/archive/documents/codex-prompt/2026/2026-04-07-v9-1-review-02-revenue-kpi-data.md",
+    "token_hint": "large"
+  },
+  {
+    "id": "codex-prompt-2026-04-07-v9-1-review-03-agent-teacher-experience",
+    "title": "Codex 검토 관점 3: 에이전트 전략 + 선생님 경험 설계",
+    "date": "2026-04-07",
+    "type": "codex-prompt",
+    "artifact_kind": "prompt",
+    "status": "final",
+    "version": "v9.1",
+    "canonical": true,
+    "period": "may",
+    "tags": [
+      "topic/ai-agent",
+      "topic/teacher",
+      "topic/supply",
+      "method/codex",
+      "artifact/review",
+      "period/may"
+    ],
+    "summary_line": "v9.1 로드맵의 에이전트 전략과 선생님 경험 설계에 대한 코덱스 검토 프롬프트 및 답변.",
+    "key_findings": [
+      "AI 에이전트 매칭 v1/v2 단계별 설계 검토",
+      "선생님 경험(소개서·등급제·정산) 개선 전략",
+      "공급측 락인과 플랫폼 방어 전략"
+    ],
+    "related_ids": [
+      "codex-review-2026-04-07-01-ai-product-strategy",
+      "codex-review-2026-04-07-05-supply-side"
+    ],
+    "path": "src/content/archive/documents/codex-prompt/2026/2026-04-07-v9-1-review-03-agent-teacher-experience.md",
+    "token_hint": "large"
+  },
+  {
+    "id": "codex-review-2026-04-07-01-ai-product-strategy",
+    "title": "AI 프로덕트 전략가 관점 — 에이전트 시대 대비",
+    "date": "2026-04-07",
+    "type": "codex-review",
+    "artifact_kind": "review",
+    "status": "final",
+    "version": "v1",
+    "canonical": true,
+    "period": "cross",
+    "tags": [
+      "topic/ai-agent",
+      "topic/data-moat",
+      "metric/revenue",
+      "method/codex"
+    ],
+    "summary_line": "AI 시대에 사라지는 것은 검색창의 희소성이고 남는 것은 관계를 운영하는 권한. 김과외가 지켜야 할 것은 매칭 이후 결제·수업·중재·재매칭까지 끝까지 운영할 수 있는 시스템.",
+    "key_findings": [
+      "대체불가능 자산 3가지: 성과 데이터 그래프, 신뢰·정산 레일, 관계 운영 OS",
+      "AI 에이전트 매칭 v2는 연간 6.5~9.7억원 매출 uplift 잠재력",
+      "올해 반드시 완성할 것: 교육 OS v1 (대시보드가 아닌 closed loop)"
+    ],
+    "related_ids": [
+      "codex-review-2026-04-07-02-unit-economics",
+      "codex-review-2026-04-07-03-edtech-retention",
+      "codex-review-2026-04-07-04-behavioral-economics"
+    ],
+    "path": "src/content/archive/documents/codex-review/2026/2026-04-07-review-01-ai-product-strategy.md",
+    "token_hint": "medium"
+  },
+  {
+    "id": "codex-review-2026-04-07-02-unit-economics",
+    "title": "마켓플레이스 유닛 이코노믹스 관점",
+    "date": "2026-04-07",
+    "type": "codex-review",
+    "artifact_kind": "review",
+    "status": "final",
+    "version": "v1",
+    "canonical": true,
+    "period": "cross",
+    "tags": [
+      "topic/unit-economics",
+      "topic/escrow",
+      "metric/revenue",
+      "method/codex"
+    ],
+    "summary_line": "매출 최대화 우선순위는 유입 확대가 아니라 성사 이후 관계를 플랫폼 안에 붙잡는 것. 81억원 / 114,159건 = 성사 1건당 약 7.1만원.",
+    "key_findings": [
+      "매출 임팩트 1위: 교육 OS v1 (+30%, +24.3억)",
+      "재이용률 2배가 성사율 2배보다 현실적으로 훨씬 큰 기대매출",
+      "실행 순서: 결제 구조 정비 → 관계 유지 루프 → 재매칭 → 성사율 → 유입"
+    ],
+    "related_ids": [
+      "codex-review-2026-04-07-01-ai-product-strategy",
+      "codex-review-2026-04-07-03-edtech-retention",
+      "codex-review-2026-04-07-04-behavioral-economics"
+    ],
+    "path": "src/content/archive/documents/codex-review/2026/2026-04-07-review-02-unit-economics.md",
+    "token_hint": "small"
+  },
+  {
+    "id": "codex-review-2026-04-07-03-edtech-retention",
+    "title": "EdTech 리텐션/그로스 관점",
+    "date": "2026-04-07",
+    "type": "codex-review",
+    "artifact_kind": "review",
+    "status": "final",
+    "version": "v1",
+    "canonical": true,
+    "period": "cross",
+    "tags": [
+      "topic/retention",
+      "topic/escrow",
+      "metric/ltv",
+      "method/codex"
+    ],
+    "summary_line": "김과외의 핵심 병목은 매칭 직후 관계와 돈이 플랫폼 밖으로 빠져나가는 것. 하나만 고르면 전국형 안심결제를 기본값으로 만드는 것.",
+    "key_findings": [
+      "Preply(구독형), Wyzant(결제수단 선등록) 모델이 적용성 높음",
+      "관계 대시보드는 단독으로 약함 — 5개 액션 카드 형태가 효과적",
+      "전국 안심결제를 기본값으로 전환 + 첫 수업 후 정기결제 자동연결"
+    ],
+    "related_ids": [
+      "codex-review-2026-04-07-01-ai-product-strategy",
+      "codex-review-2026-04-07-02-unit-economics",
+      "codex-review-2026-04-07-04-behavioral-economics"
+    ],
+    "path": "src/content/archive/documents/codex-review/2026/2026-04-07-review-03-edtech-retention.md",
+    "token_hint": "medium"
+  },
+  {
+    "id": "codex-review-2026-04-07-04-behavioral-economics",
+    "title": "행동경제학/넛지 설계 관점",
+    "date": "2026-04-07",
+    "type": "codex-review",
+    "artifact_kind": "review",
+    "status": "final",
+    "version": "v1",
+    "canonical": true,
+    "period": "cross",
+    "tags": [
+      "topic/nudge",
+      "topic/ux",
+      "method/codex"
+    ],
+    "summary_line": "김과외의 문제는 정보 부족이 아니라 선택 구조 문제. 로드맵의 성패는 기능 수보다 기본값, 마찰 설계, 손실 프레이밍, 타이밍에 달려 있다.",
+    "key_findings": [
+      "기본값 설계가 설득보다 강력: 안심결제를 옵트아웃(기본값)으로",
+      "손실 프레이밍 활용: 보호 혜택을 먼저 주고 직접결제 시 잃게 설계",
+      "매칭 직후 첫 수업을 플랫폼 안에서 시작하게 만드는 플로우가 핵심"
+    ],
+    "related_ids": [
+      "codex-review-2026-04-07-01-ai-product-strategy",
+      "codex-review-2026-04-07-02-unit-economics",
+      "codex-review-2026-04-07-03-edtech-retention"
+    ],
+    "path": "src/content/archive/documents/codex-review/2026/2026-04-07-review-04-behavioral-economics.md",
+    "token_hint": "medium"
+  },
+  {
+    "id": "codex-review-2026-04-07-05-supply-side",
+    "title": "공급측(선생님) 전략가 관점",
+    "date": "2026-04-07",
+    "type": "codex-review",
+    "artifact_kind": "review",
+    "status": "final",
+    "version": "v1",
+    "canonical": true,
+    "period": "cross",
+    "tags": [
+      "topic/supply",
+      "topic/teacher",
+      "topic/profile",
+      "method/codex"
+    ],
+    "summary_line": "공급측 우선순위: 소개서 완성도 → 실시간 가용성 → 안심결제/정산 편의 → 상위 선생님 락인 OS → 등급제/AI매칭.",
+    "key_findings": [
+      "80%+ 소개서 완성 선생님 성사율 12배 — 5%→25%로 올리면 전체 성사율 잠재치 ~2.4배",
+      "빠진 시책: 실시간 가용성, 소개서 활성화 머신, 선생님 운영 OS, 정산 마찰 제거, 상위 보상체계",
+      "선생님의 매출을 키워주는 운영체제가 되기 전에 심판이 되면 떠난다"
+    ],
+    "related_ids": [
+      "codex-review-2026-04-07-01-ai-product-strategy",
+      "codex-review-2026-04-07-02-unit-economics",
+      "codex-review-2026-04-07-03-edtech-retention"
+    ],
+    "path": "src/content/archive/documents/codex-review/2026/2026-04-07-review-05-supply-side.md",
+    "token_hint": "medium"
+  },
+  {
+    "id": "codex-review-2026-04-07-06-payment-fintech",
+    "title": "결제·핀테크 전략가 관점",
+    "date": "2026-04-07",
+    "type": "codex-review",
+    "artifact_kind": "review",
+    "status": "final",
+    "version": "v1",
+    "canonical": true,
+    "period": "cross",
+    "tags": [
+      "topic/escrow",
+      "topic/payment",
+      "topic/fintech",
+      "method/codex"
+    ],
+    "summary_line": "안심결제 전국 확대의 본질은 단기 수수료 uplift보다 검증된 수업료 흐름 데이터 확보. 안심결제는 결제 기능이 아니라 LTV 측정기.",
+    "key_findings": [
+      "안심결제 중간 시나리오: 12개월 내 25% 채택, take rate +1.0%p, +3.2~6.5억",
+      "전환 전략: 채팅 내 1클릭 전환 + 안전·분쟁해결·증빙 패키징 + 양면 인센티브",
+      "가격 설계: 안심계좌이체 학부모 0%, 선생님 22~23%, 카드/할부만 1.9~3.3%"
+    ],
+    "related_ids": [
+      "codex-review-2026-04-07-01-ai-product-strategy",
+      "codex-review-2026-04-07-02-unit-economics",
+      "codex-review-2026-04-07-03-edtech-retention"
+    ],
+    "path": "src/content/archive/documents/codex-review/2026/2026-04-07-review-06-payment-fintech.md",
+    "token_hint": "medium"
+  },
+  {
+    "id": "codex-review-2026-04-07-07-cross-analysis",
+    "title": "6개 자문 교차 분석 종합",
+    "date": "2026-04-07",
+    "type": "codex-review",
+    "artifact_kind": "review",
+    "status": "final",
+    "version": "v1",
+    "canonical": true,
+    "period": "cross",
+    "tags": [
+      "topic/escrow",
+      "topic/strategy",
+      "method/cross-analysis"
+    ],
+    "summary_line": "6개 관점 전원 일치: 안심결제 전국 확대가 매출 임팩트 1~2순위, 매칭 직후 플랫폼 내 결제/수업 시작 플로우가 가장 큰 전환점.",
+    "key_findings": [
+      "전원 일치(6/6): 안심결제 전국 확대가 매출 1~2순위, AI 에이전트는 closed loop 없이 데모 수준",
+      "다수 일치: 소개서 입력률이 성사율 최대 레버, 체크인은 자동 재매칭까지 붙어야 강함",
+      "실행 순서 컨센서스: 결제 정비 → 기본값 설계 → 소개서+체크인 → 재매칭 → AI 매칭 → SEO → 에이전트"
+    ],
+    "related_ids": [
+      "codex-review-2026-04-07-01-ai-product-strategy",
+      "codex-review-2026-04-07-02-unit-economics",
+      "codex-review-2026-04-07-03-edtech-retention"
+    ],
+    "path": "src/content/archive/documents/codex-review/2026/2026-04-07-review-07-cross-analysis.md",
+    "token_hint": "small"
+  },
+  {
+    "id": "data-analysis-2026-04-07-escrow-gap",
+    "title": "안심결제 vs 직접결제 순매출 갭 분석",
+    "date": "2026-04-07",
+    "type": "data-analysis",
+    "artifact_kind": "report",
+    "status": "final",
+    "version": "v1",
+    "canonical": true,
+    "period": "cross",
+    "tags": [
+      "topic/escrow",
+      "topic/payment",
+      "metric/revenue",
+      "metric/unit-economics",
+      "method/db-analysis"
+    ],
+    "summary_line": "안심결제 건당 순매출은 직접결제 대비 20.4% 낮지만, 환불/페이백 반영 시 표면 갭(24.3%)보다 축소됨. 갭의 45%는 세션 미정산, 55%는 과외비 차이.",
+    "key_findings": [
+      "표면 갭 24.3% → 환불·페이백 반영 후 순매출 갭 20.4%로 축소",
+      "갭의 45%는 세션 미정산(팬텀매출), 55%는 평균 과외비 차이(서울 한정에도 12.2% 낮음)",
+      "권장안: 요율 22% + usage_fee 전액 수금 보장 시 갭 20.4% → 12.5% (잔여는 시장 요인)"
+    ],
+    "related_ids": [
+      "codex-review-2026-04-07-02-unit-economics",
+      "codex-review-2026-04-07-06-payment-fintech",
+      "roadmap-2026-06-jun"
+    ],
+    "path": "src/content/archive/documents/data-analysis/2026/2026-04-07-escrow-gap-analysis.md",
+    "token_hint": "large"
+  },
+  {
+    "id": "roadmap-2026-03-mar",
+    "title": "김과외 3월 로드맵",
+    "date": "2026-03-15",
+    "type": "roadmap",
+    "artifact_kind": "report",
+    "status": "final",
+    "version": "v1",
+    "canonical": true,
+    "period": "mar",
+    "tags": [
+      "topic/matching",
+      "topic/search",
+      "topic/payment",
+      "period/mar"
+    ],
+    "summary_line": "공고 개편, 소개서 구조화, AI 자연어 검색, 수업료 납부 자동화, 현금영수증 자동발급, 학원법 대응까지 한 사이클로 묶은 패치.",
+    "key_findings": [
+      "공고 경쟁강도 배너 + 소개서 구조화 + AI 자연어 검색 도입",
+      "수업료 납부 자동발송 + 현금영수증 자동발급",
+      "학원법 개정 대응(유아 대상 4과목 중단) + 12과목 신설"
+    ],
+    "related_ids": [
+      "codex-review-2026-04-07-07-cross-analysis"
+    ],
+    "path": "src/content/archive/documents/roadmap/2026/2026-03-15-mar-infra-ux.md",
+    "token_hint": "medium"
+  }
+]
